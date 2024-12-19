@@ -39,7 +39,7 @@ const Faq = () => {
 
   return (
    <div className="bg-secondary">
-     <div className="py-20  max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between ">
+     <div className="py-20  max-w-7xl mx-auto flex flex-col md:flex-row justify-between ">
       {/* Header Section */}
       <div className="flex flex-col text-left w-[412px]">
         <p className="text-[40px] leading-[40px] font-bold inline-block text-default mb-4">

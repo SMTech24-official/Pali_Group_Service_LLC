@@ -1,6 +1,7 @@
 
 import './App.css'
 import Banner from './components/Banner'
+import Blog from './components/Blog'
 import Choose from './components/Choose'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
@@ -15,6 +16,7 @@ function App() {
      <Banner/>
      <Choose/>
      <Faq/>
+     <Blog/>
      <Footer/>
     </>
   )
