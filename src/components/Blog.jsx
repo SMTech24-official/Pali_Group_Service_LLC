@@ -26,7 +26,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="bg-gray-50 px-4 sm:px-8">
+    <section className="bg-gray-50 px-4 sm:px-8" id="blog">
       <div className="max-w-[1140px] mx-auto py-[120px]">
         {/* Header Section */}
         <header className="text-center mb-12">
@@ -47,20 +47,20 @@ const Blog = () => {
           {blogs.map((blog, index) => (
             <article
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white md:w-[350px] w-full rounded-lg"
             >
               {/* Blog Image */}
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="w-full h-[200px] object-cover"
+                className="md:w-[350px] md:h-[350px] w-full object-cover"
               />
               {/* Blog Content */}
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-black mb-4 leading-[28px]">
+              <div className="font_popins">
+                <h3 className="text-lg font-semibold text-default mb-3 mt-8 leading-[28px]">
                   {blog.title}
                 </h3>
-                <p className="text-gray text-sm mb-5">{blog.description}</p>
+                <p className="text-gray mb-5">{blog.description}</p>
                 <a
                   href={blog.link}
                   className="text-[#3D5BB8] font-medium inline-flex items-center hover:underline"

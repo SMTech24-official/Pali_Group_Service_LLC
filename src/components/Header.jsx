@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; // Importing icons from react-icons
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -6,6 +7,15 @@ const Header = () => {
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  // Function to handle smooth scrolling
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsDrawerOpen(false);
+    }
   };
 
   return (
@@ -24,30 +34,54 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 Home
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("why-us")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 Why Us
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 Services
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 About Us
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("casestudies")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 Casestudies
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 FAQ
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
-                Contact
-              </a>
-              <a href="#" className="text-white font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("blog")}
+                className="text-white font-medium hover:text-gray-300"
+              >
                 Blog
-              </a>
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-white font-medium hover:text-gray-300"
+              >
+                Contact
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -57,30 +91,11 @@ const Header = () => {
                 type="button"
                 className="text-white focus:outline-none"
               >
-                {/* Hamburger Icon */}
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {isDrawerOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  )}
-                </svg>
+                {isDrawerOpen ? (
+                  "" 
+                ) : (
+                  <FaBars className="h-6 w-6" /> 
+                )}
               </button>
             </div>
           </div>
@@ -88,43 +103,70 @@ const Header = () => {
 
         {/* Drawer Menu */}
         <div
-          className={`fixed inset-y-0 left-0 w-64 bg-primary transform ${
+          className={`fixed inset-y-0 left-0 w-[80%] bg-primary transform ${
             isDrawerOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-300 ease-in-out z-50`}
         >
           <div className="flex flex-col h-full text-white">
-            <div className="pt-4 pl-4">
+            <div className="pt-4 pl-4 flex items-center justify-between">
               <img
-                className="w-[100px]"
+                className="w-[150px]"
                 src="/images/Logo-pali.png"
                 alt="Logo"
               />
+              <button onClick={toggleDrawer} className="mr-4">
+              <FaTimes className="h-6 w-6" />
+              </button>
             </div>
-            <div className="flex-grow p-4 space-y-4">
-              <a href="#" className="block font-medium hover:text-gray-300">
+            <div className="flex-grow pl-7 space-y-4 mt-7 ">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="block font-medium hover:text-gray-300"
+              >
                 Home
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("why-us")}
+                className="block font-medium hover:text-gray-300"
+              >
                 Why Us
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="block font-medium hover:text-gray-300"
+              >
                 Services
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="block font-medium hover:text-gray-300"
+              >
                 About Us
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("casestudies")}
+                className="block font-medium hover:text-gray-300"
+              >
                 Casestudies
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="block font-medium hover:text-gray-300"
+              >
                 FAQ
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="block font-medium hover:text-gray-300"
+              >
                 Contact
-              </a>
-              <a href="#" className="block font-medium hover:text-gray-300">
+              </button>
+              <button
+                onClick={() => scrollToSection("blog")}
+                className="block font-medium hover:text-gray-300"
+              >
                 Blog
-              </a>
+              </button>
             </div>
           </div>
         </div>

@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-[1440px] mx-auto pb-[120px] px-4">
-      <div className="flex flex-col lg:flex-row gap-[60px] items-center lg:items-start">
+    <div className="max-w-[1440px] mx-auto pb-[60px] md:pb-[120px] lg:pb-[120px] px-4" id="about">
+      <div className="flex flex-col-reverse lg:flex-row gap-[60px] items-center lg:items-start">
         {/* Image Section */}
         <div className="w-full lg:w-auto flex justify-center">
           <img
@@ -14,11 +14,11 @@ const About = () => {
         </div>
 
         {/* Content Section */}
-        <div className="w-full lg:w-[525px]">
+        <div className="w-full lg:w-[525px] text-center md:text-start lg:text-start">
           <p className="text-[#131232] border border-gray px-4 py-1 inline-block rounded-[30px] mb-4">
             About Us
           </p>
-          <h2 className="text-3xl md:text-[40px] font-bold mb-4 leading-[48px] text-center lg:text-left">
+          <h2 className="text-3xl leading-[35px] md:text-[40px] font-bold mb-4 md:leading-[48px] text-center lg:text-left">
             Dedicated to Excellence in Inspection Oversight
           </h2>
           <p className="text-gray mb-8 text-center lg:text-left">

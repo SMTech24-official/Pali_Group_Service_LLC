@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative  overflow-hidden">
+    <div className="relative overflow-hidden" id="home">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img

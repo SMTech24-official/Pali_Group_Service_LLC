@@ -50,7 +50,7 @@ const Choose = () => {
   ];
 
   return (
-   <div className="bg-[#EBEBEB]">
+   <div className="bg-[#EBEBEB]" id="why-us">
      <section className="py-[80px] lg:py-[120px] px-4 sm:px-8 bg-gray-50 max-w-[1440px] mx-auto">
       <div className="max-w-5xl mx-auto text-center">
         {/* Header Section */}

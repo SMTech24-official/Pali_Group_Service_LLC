@@ -2,14 +2,14 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div className="bg-gray-50 py-[120px] px-4 md:px-8 max-w-[1440px] mx-auto">
+    <div className="bg-gray-50 md:py-[120px] py-[60px] px-4 md:px-8 max-w-[1440px] mx-auto" id="services">
       {/* Header Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
-        <div className="w-full lg:w-[453px]">
+        <div className="w-full lg:w-[453px] text-center md:text-start">
           <p className="text-[#131232] border border-gray px-4 py-1 inline-block rounded-[30px] mb-4">
             Our Services
           </p>
-          <h2 className="text-3xl md:text-[40px] font-bold mb-4 leading-[48px] text-center lg:text-left">
+          <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
             Our Inspection <br /> Services Designed for Pali
           </h2>
         </div>
