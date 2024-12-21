@@ -2,7 +2,7 @@ import React from "react";
 
 const CaseStudy = () => {
   return (
-    <div className="max-w-[1440px] mx-auto pb-[120px] px-4" id="casestudies">
+    <div className="max-w-[1440px] mx-auto pb-[60px] md:pb-[120px] px-4" id="casestudies">
       {/* Header Section */}
       <div className="w-full lg:w-[610px] mx-auto text-center">
         <p className="text-gray-700 border border-gray-300 rounded-[32px] mx-auto mb-5 py-2 px-4 inline-block">

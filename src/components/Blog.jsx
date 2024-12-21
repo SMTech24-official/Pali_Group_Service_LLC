@@ -27,7 +27,7 @@ const Blog = () => {
 
   return (
     <section className="bg-gray-50 px-4 sm:px-8" id="blog">
-      <div className="max-w-[1140px] mx-auto py-[120px]">
+      <div className="max-w-[1140px] mx-auto py-[60px] md:py-[120px]">
         {/* Header Section */}
         <header className="text-center mb-12">
           <p className="text-sm font-semibold text-gray border border-gray rounded-[30px] inline-block px-4 py-2">

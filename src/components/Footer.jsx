@@ -3,10 +3,10 @@ import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 py-12 px-6 sm:px-12 mt-[120px] max-w-[1140px] mx-auto">
+    <footer className="bg-gray-50 py-12 px-6 sm:px-12 mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]">
         {/* Left Section - Logo and Description */}
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-left border-r-2 border-[#E6E8EC] pr-[64px]">
+        <div className="flex flex-col md:items-center  items-start md:text-center text-left md:border-r-2 border-[#E6E8EC] pr-[64px]">
           <img
             src="/images/footerLogo.png"
             alt="Pali Group Services"
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         {/* Center Section - Navigation Links */}
-        <div className="flex flex-col  border-r-2 border-[#E6E8EC]">
+        <div className="flex flex-col  md:border-r-2 border-[#E6E8EC]">
           <ul className="text-gray font-semibold space-y-8">
             <li>
               <a href="#home" className="hover:text-primary">
@@ -67,7 +67,7 @@ const Footer = () => {
         {/* Right Section - Social Media */}
         <div className="flex flex-col">
           <p className="text-default font-medium mb-8 text-start">Follow us on</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 pb-7 md:pb-0">
             <a href="#" className="text-gray-800 hover:text-primary">
               <FaLinkedin className="w-8 h-8" />
             </a>

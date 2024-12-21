@@ -1,22 +1,55 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Importing icons from react-icons
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  // Function to handle smooth scrolling
+  // Function to handle smooth scrolling and set active section
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setIsDrawerOpen(false);
+      setActiveSection(id); 
+      setIsDrawerOpen(false); 
     }
   };
+
+  // Detect active section while scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "home",
+        "why-us",
+        "services",
+        "about",
+        "casestudies",
+        "faq",
+        "blog",
+        "contact",
+      ];
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -34,54 +67,28 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection("why-us")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                Why Us
-              </button>
-              <button
-                onClick={() => scrollToSection("services")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                About Us
-              </button>
-              <button
-                onClick={() => scrollToSection("casestudies")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                Casestudies
-              </button>
-              <button
-                onClick={() => scrollToSection("faq")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                FAQ
-              </button>
-              <button
-                onClick={() => scrollToSection("blog")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                Blog
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-white font-medium hover:text-gray-300"
-              >
-                Contact
-              </button>
+              {[
+                { id: "home", label: "Home" },
+                { id: "why-us", label: "Why Us" },
+                { id: "services", label: "Services" },
+                { id: "about", label: "About Us" },
+                { id: "casestudies", label: "Casestudies" },
+                { id: "faq", label: "FAQ" },
+                { id: "blog", label: "Blog" },
+                { id: "contact", label: "Contact" },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`font-medium ${
+                    activeSection === item.id
+                      ? "text-[#4F95DF]"
+                      : "text-white hover:text-gray-300"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
 
             {/* Mobile Menu Button */}
@@ -91,11 +98,7 @@ const Header = () => {
                 type="button"
                 className="text-white focus:outline-none"
               >
-                {isDrawerOpen ? (
-                  "" 
-                ) : (
-                  <FaBars className="h-6 w-6" /> 
-                )}
+                {isDrawerOpen ? "" : <FaBars className="h-6 w-6" />}
               </button>
             </div>
           </div>
@@ -115,58 +118,32 @@ const Header = () => {
                 alt="Logo"
               />
               <button onClick={toggleDrawer} className="mr-4">
-              <FaTimes className="h-6 w-6" />
+                <FaTimes className="h-6 w-6" />
               </button>
             </div>
             <div className="flex-grow pl-7 space-y-4 mt-7 ">
-              <button
-                onClick={() => scrollToSection("home")}
-                className="block font-medium hover:text-gray-300"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection("why-us")}
-                className="block font-medium hover:text-gray-300"
-              >
-                Why Us
-              </button>
-              <button
-                onClick={() => scrollToSection("services")}
-                className="block font-medium hover:text-gray-300"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="block font-medium hover:text-gray-300"
-              >
-                About Us
-              </button>
-              <button
-                onClick={() => scrollToSection("casestudies")}
-                className="block font-medium hover:text-gray-300"
-              >
-                Casestudies
-              </button>
-              <button
-                onClick={() => scrollToSection("faq")}
-                className="block font-medium hover:text-gray-300"
-              >
-                FAQ
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="block font-medium hover:text-gray-300"
-              >
-                Contact
-              </button>
-              <button
-                onClick={() => scrollToSection("blog")}
-                className="block font-medium hover:text-gray-300"
-              >
-                Blog
-              </button>
+              {[
+                { id: "home", label: "Home" },
+                { id: "why-us", label: "Why Us" },
+                { id: "services", label: "Services" },
+                { id: "about", label: "About Us" },
+                { id: "casestudies", label: "Casestudies" },
+                { id: "faq", label: "FAQ" },
+                { id: "blog", label: "Blog" },
+                { id: "contact", label: "Contact" },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`block font-medium ${
+                    activeSection === item.id
+                      ? "text-[#4F95DF]"
+                      : "hover:text-gray-300"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
           </div>
         </div>
@@ -175,7 +152,7 @@ const Header = () => {
         {isDrawerOpen && (
           <div
             onClick={toggleDrawer}
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 bg-default bg-opacity-50 z-40"
           ></div>
         )}
       </header>
