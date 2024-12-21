@@ -1,10 +1,39 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Service = () => {
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.5, 
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <div className="bg-gray-50 md:py-[120px] py-[60px] px-4 md:px-8 max-w-[1440px] mx-auto" id="services">
+    <motion.div
+      className="bg-gray-50 md:py-[120px] py-[60px] px-4 md:px-8 max-w-[1440px] mx-auto"
+      id="services"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }} // Animations trigger on scroll
+      variants={containerVariants}
+    >
       {/* Header Section */}
-      <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+      <motion.div
+        className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0"
+        variants={itemVariants}
+      >
         <div className="w-full lg:w-[453px] text-center md:text-start">
           <p className="text-[#131232] border border-gray px-4 py-1 inline-block rounded-[30px] mb-4">
             Our Services
@@ -20,12 +49,18 @@ const Service = () => {
           relevant codes, regulations, and safety standards specific to
           healthcare facilities.
         </p>
-      </div>
+      </motion.div>
 
       {/* Services Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 justify-center">
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 justify-center"
+        variants={containerVariants}
+      >
         {/* Service 1 */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[370px] p-[30px] mx-auto lg:mx-0">
+        <motion.div
+          className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[370px] p-[30px] mx-auto lg:mx-0"
+          variants={itemVariants}
+        >
           <img
             src="images/service1.png"
             alt="Constructability Review"
@@ -43,10 +78,13 @@ const Service = () => {
               standards specific to healthcare facilities.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Service 2 */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[370px] p-[30px] mx-auto lg:mx-0">
+        <motion.div
+          className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[370px] p-[30px] mx-auto lg:mx-0"
+          variants={itemVariants}
+        >
           <img
             src="/images/service2.png"
             alt="Site Inspections"
@@ -60,10 +98,13 @@ const Service = () => {
               specifications.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Service 3 */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[370px] p-[30px] mx-auto lg:mx-0">
+        <motion.div
+          className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[370px] p-[30px] mx-auto lg:mx-0"
+          variants={itemVariants}
+        >
           <img
             src="images/service3.png"
             alt="Documentation"
@@ -78,9 +119,9 @@ const Service = () => {
               approved OSHPD/HCAi Plans.
             </p>
           </div>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

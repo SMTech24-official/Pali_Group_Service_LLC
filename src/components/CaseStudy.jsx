@@ -1,10 +1,39 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const CaseStudy = () => {
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <div className="max-w-[1440px] mx-auto pb-[60px] md:pb-[120px] px-4" id="casestudies">
+    <motion.div
+      className="max-w-[1440px] mx-auto pb-[60px] md:pb-[120px] px-4"
+      id="casestudies"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }} 
+      variants={containerVariants}
+    >
       {/* Header Section */}
-      <div className="w-full lg:w-[610px] mx-auto text-center">
+      <motion.div
+        className="w-full lg:w-[610px] mx-auto text-center"
+        variants={itemVariants}
+      >
         <p className="text-gray-700 border border-gray-300 rounded-[32px] mx-auto mb-5 py-2 px-4 inline-block">
           Case Studies
         </p>
@@ -15,12 +44,15 @@ const CaseStudy = () => {
           Explore how Pali Group Service overcomes challenges to deliver
           high-quality, compliant, and reliable solutions.
         </p>
-      </div>
+      </motion.div>
 
       {/* Case Study Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center px-4 lg:px-0">
+      <motion.div
+        className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center px-4 lg:px-0"
+        variants={containerVariants}
+      >
         {/* Image Section */}
-        <div className="relative">
+        <motion.div className="relative" variants={itemVariants}>
           <div className="w-full h-full overflow-hidden rounded-[20px] flex">
             <img
               src="/images/case1.png"
@@ -37,10 +69,10 @@ const CaseStudy = () => {
           <button className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FFFFFFCC] w-[100px] h-[100px] rounded-full text-gray-800 font-bold px-6 py-2 text-default border-2 border-[#FFFFFF]">
             Explore
           </button>
-        </div>
+        </motion.div>
 
         {/* Text Content Section */}
-        <div>
+        <motion.div variants={itemVariants}>
           <h2 className="text-xl sm:text-2xl lg:text-[24px] font-bold text-default">
             Hospital Emergency Room Renovation
           </h2>
@@ -54,10 +86,10 @@ const CaseStudy = () => {
           >
             Check Full Casestudies
           </a>
-        </div>
+        </motion.div>
 
-        {/* text content */}
-        <div>
+        {/* More Case Studies */}
+        <motion.div variants={itemVariants}>
           <h2 className="text-xl sm:text-2xl lg:text-[24px] font-bold text-default">
             Outpatient Clinic Expansion
           </h2>
@@ -71,9 +103,9 @@ const CaseStudy = () => {
           >
             Check Full Casestudies
           </a>
-        </div>
-        {/* image */}
-        <div className="relative">
+        </motion.div>
+
+        <motion.div className="relative" variants={itemVariants}>
           <div className="w-full h-full overflow-hidden rounded-[20px] flex">
             <img
               src="/images/case3.png"
@@ -90,10 +122,9 @@ const CaseStudy = () => {
           <button className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FFFFFFCC] w-[100px] h-[100px] rounded-full text-gray-800 font-bold px-6 py-2 text-default border-2 border-[#FFFFFF]">
             Explore
           </button>
-        </div>
+        </motion.div>
 
-        {/* image */}
-        <div className="relative">
+        <motion.div className="relative" variants={itemVariants}>
           <div className="w-full h-full overflow-hidden rounded-[20px] flex">
             <img
               src="/images/case5.png"
@@ -110,9 +141,9 @@ const CaseStudy = () => {
           <button className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FFFFFFCC] w-[100px] h-[100px] rounded-full text-gray-800 font-bold px-6 py-2 text-default border-2 border-[#FFFFFF]">
             Explore
           </button>
-        </div>
-        {/* text content */}
-        <div>
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
           <h2 className="text-xl sm:text-2xl lg:text-[24px] font-bold text-default">
             Medical Imaging Facility Construction
           </h2>
@@ -127,9 +158,9 @@ const CaseStudy = () => {
           >
             Check Full Casestudies
           </a>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

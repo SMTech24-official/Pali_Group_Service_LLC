@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   const blogs = [
@@ -25,11 +26,39 @@ const Blog = () => {
     },
   ];
 
+  // Animation Variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <section className="bg-gray-50 px-4 sm:px-8" id="blog">
+    <motion.section
+      className="bg-gray-50 px-4 sm:px-8"
+      id="blog"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }} // Animations trigger when 20% of the section is visible
+      variants={containerVariants}
+    >
       <div className="max-w-[1140px] mx-auto py-[60px] md:py-[120px]">
         {/* Header Section */}
-        <header className="text-center mb-12">
+        <motion.header
+          className="text-center mb-12"
+          variants={itemVariants} // Header animation
+        >
           <p className="text-sm font-semibold text-gray border border-gray rounded-[30px] inline-block px-4 py-2">
             Our Blog
           </p>
@@ -40,14 +69,18 @@ const Blog = () => {
             Explore expert tips, industry trends, and project highlights from
             Pali Group Service.
           </p>
-        </header>
+        </motion.header>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+          variants={containerVariants}
+        >
           {blogs.map((blog, index) => (
-            <article
+            <motion.article
               key={index}
               className="bg-white md:w-[350px] w-full rounded-lg"
+              variants={itemVariants} // Blog card animation
             >
               {/* Blog Image */}
               <img
@@ -68,11 +101,11 @@ const Blog = () => {
                   Read More <span className="ml-1 font-medium">&rarr;</span>
                 </a>
               </div>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

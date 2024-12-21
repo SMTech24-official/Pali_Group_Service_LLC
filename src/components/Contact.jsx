@@ -1,11 +1,40 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
+  // Animation Variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.5, 
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <div className="bg-[#1a1a42] text-white py-20 px-4 md:px-8" id='contact'>
+    <motion.div
+      className="bg-[#1a1a42] text-white py-20 px-4 md:px-8"
+      id="contact"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      variants={containerVariants}
+    >
       {/* Header Section */}
-      <div className="flex flex-col justify-center items-center text-center pb-10">
+      <motion.div
+        className="flex flex-col justify-center items-center text-center pb-10"
+        variants={itemVariants}
+      >
         <p className="px-4 py-2 border border-gray-400 rounded-[32px] mb-3">
           Contact Us
         </p>
@@ -15,12 +44,18 @@ const Contact = () => {
         <p className="text-[#FFFFFF] text-[16px] md:text-[18px] mt-4">
           Contact Pali Group Service for expert <br /> inspections you can rely on.
         </p>
-      </div>
+      </motion.div>
 
       {/* Form and Contact Info Section */}
-      <div className="max-w-[915px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <motion.div
+        className="max-w-[915px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8"
+        variants={containerVariants}
+      >
         {/* Form Section */}
-        <div className="bg-white text-black p-8 rounded-[20px] shadow-md w-full max-w-[432px] mx-auto lg:mx-0">
+        <motion.div
+          className="bg-white text-black p-8 rounded-[20px] shadow-md w-full max-w-[432px] mx-auto lg:mx-0"
+          variants={itemVariants}
+        >
           <h2 className="text-center text-[40px] font-bold mb-6 leading-[48px]">
             Be updated <br /> sending request
           </h2>
@@ -59,10 +94,13 @@ const Contact = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
 
         {/* Contact Information Section */}
-        <div className="flex flex-col justify-center items-center space-y-6 lg:space-y-4">
+        <motion.div
+          className="flex flex-col justify-center items-center space-y-6 lg:space-y-4"
+          variants={itemVariants}
+        >
           <div>
             <h3 className="text-[24px] font-bold mb-4 text-center lg:text-left">
               Direct Contact Information
@@ -85,9 +123,9 @@ const Contact = () => {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

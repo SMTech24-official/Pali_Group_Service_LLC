@@ -1,19 +1,47 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Awards = () => {
+  // Animation Variants
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8, // Animation duration
+      },
+    },
+  };
+
   return (
     <div className="max-w-[1440px] mx-auto py-[120px] px-4">
       {/* Header Section */}
-      <div>
+      <motion.div
+        className="text-center"
+        initial="hidden"
+        whileInView="visible" // Animation triggers when in viewport
+        viewport={{ once: false, amount: 0.2 }} // Trigger on each scroll near this section
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+        }}
+      >
         <h1 className="text-[28px] sm:text-[36px] lg:text-[40px] font-bold text-default text-center mb-10">
           Awards & Certifications
         </h1>
-      </div>
+      </motion.div>
 
       {/* Awards Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center">
         {/* Award 1 */}
-        <div className="w-full max-w-[250px] text-center">
+        <motion.div
+          className="w-full max-w-[250px] text-center"
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }} // Animation repeats on every scroll into view
+        >
           <img
             src="/images/award1.png"
             alt="Award 1"
@@ -23,10 +51,16 @@ const Awards = () => {
             OSHPD Inspector of Records
           </h2>
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
-        </div>
+        </motion.div>
 
         {/* Award 2 */}
-        <div className="w-full max-w-[250px] text-center">
+        <motion.div
+          className="w-full max-w-[250px] text-center"
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <img
             src="/images/award2.png"
             alt="Award 2"
@@ -36,10 +70,16 @@ const Awards = () => {
             Medical Gas Inspector, NITC
           </h2>
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
-        </div>
+        </motion.div>
 
         {/* Award 3 */}
-        <div className="w-full max-w-[250px] text-center">
+        <motion.div
+          className="w-full max-w-[250px] text-center"
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <img
             src="/images/award3.png"
             alt="Award 3"
@@ -49,7 +89,7 @@ const Awards = () => {
             International Firestop Council Premier
           </h2>
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2024</p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

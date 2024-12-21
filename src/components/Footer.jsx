@@ -1,12 +1,43 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  // Animation Variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.3, 
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
-    <footer className="bg-gray-50 py-12 px-6 sm:px-12 mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]">
+    <motion.footer
+      className="bg-gray-50 py-12 px-6 sm:px-12 mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }} 
+      variants={containerVariants}
+    >
+      <motion.div
+        className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]"
+        variants={containerVariants}
+      >
         {/* Left Section - Logo and Description */}
-        <div className="flex flex-col md:items-center  items-start md:text-center text-left md:border-r-2 border-[#E6E8EC] pr-[64px]">
+        <motion.div
+          className="flex flex-col md:items-center items-start md:text-center text-left md:border-r-2 border-[#E6E8EC] pr-[64px]"
+          variants={itemVariants}
+        >
           <img
             src="/images/footerLogo.png"
             alt="Pali Group Services"
@@ -16,10 +47,13 @@ const Footer = () => {
             Simplify Healthcare Construction Inspections and Build a Safer,
             Happier Future.
           </p>
-        </div>
+        </motion.div>
 
         {/* Center Section - Navigation Links */}
-        <div className="flex flex-col  md:border-r-2 border-[#E6E8EC]">
+        <motion.div
+          className="flex flex-col md:border-r-2 border-[#E6E8EC]"
+          variants={itemVariants}
+        >
           <ul className="text-gray font-semibold space-y-8">
             <li>
               <a href="#home" className="hover:text-primary">
@@ -62,10 +96,13 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </motion.div>
 
         {/* Right Section - Social Media */}
-        <div className="flex flex-col">
+        <motion.div
+          className="flex flex-col"
+          variants={itemVariants}
+        >
           <p className="text-default font-medium mb-8 text-start">Follow us on</p>
           <div className="flex space-x-4 pb-7 md:pb-0">
             <a href="#" className="text-gray-800 hover:text-primary">
@@ -78,14 +115,17 @@ const Footer = () => {
               <FaTwitter className="w-8 h-8" />
             </a>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Bottom Section - Copyright */}
-      <div className="text-center mt-10 text-gray">
+      <motion.div
+        className="text-center mt-10 text-gray"
+        variants={itemVariants}
+      >
         © 2024 Pali Group Services, LLC. All rights reserved.
-      </div>
-    </footer>
+      </motion.div>
+    </motion.footer>
   );
 };
 
