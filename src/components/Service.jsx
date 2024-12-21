@@ -26,7 +26,7 @@ const Service = () => {
       id="services"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }} // Animations trigger on scroll
+      viewport={{ once: false, amount: 0.2 }} 
       variants={containerVariants}
     >
       {/* Header Section */}
