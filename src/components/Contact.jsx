@@ -27,7 +27,7 @@ const Contact = () => {
       id="contact"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }} // Trigger animation only once
+      viewport={{ once: true, amount: 0.2 }} 
       variants={containerVariants}
     >
       {/* Header Section */}
