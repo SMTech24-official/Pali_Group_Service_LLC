@@ -56,8 +56,8 @@ const Footer = () => {
                 Contact
               </a>
             </li>
-            <li>
-              <a href="#blog" className="hover:text-primary mb-6">
+            <li className="pb-6">
+              <a href="#blog" className="hover:text-primary">
                 Blog
               </a>
             </li>

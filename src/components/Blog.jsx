@@ -54,16 +54,16 @@ const Blog = () => {
                 className="w-[350px] h-[350px] object-cover"
               />
               {/* Blog Content */}
-              <div className="">
-                <h3 className="text-lg font-semibold text-[#000000] mt-8 mb-4">
+              <div className="font_popins">
+                <h3 className="text-lg font-semibold text-[#000000] mt-8 mb-4 leading-[28px]">
                   {blog.title}
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">{blog.description}</p>
+                <p className="text-gray mb-5">{blog.description}</p>
                 <a
                   href={blog.link}
-                  className="text-primary font-semibold text-sm inline-flex items-center hover:underline"
+                  className="text-[#3D5BB8] font-medium inline-flex items-center hover:underline"
                 >
-                  Read More <span className="ml-1">&rarr;</span>
+                  Read More <span className="ml-1 font-medium">&rarr;</span>
                 </a>
               </div>
             </div>
