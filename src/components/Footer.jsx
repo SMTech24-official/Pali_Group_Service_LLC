@@ -3,8 +3,8 @@ import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 py-12 px-6 sm:px-12 mt-[120px]">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]">
+    <footer className="bg-gray-50 py-12 px-6 sm:px-12 mt-[120px] max-w-[1140px] mx-auto">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]">
         {/* Left Section - Logo and Description */}
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left border-r-2 border-[#E6E8EC] pr-[64px]">
           <img

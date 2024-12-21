@@ -14,7 +14,7 @@ const Banner = () => {
       </div>
 
       {/* Content */}
-      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:pt-20">
+      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:pt-28">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left Content */}
           <div className="text-center mb-8 lg:mb-0 lg:w-[935px] mx-auto w-full">

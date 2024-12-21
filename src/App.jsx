@@ -1,6 +1,9 @@
 import "./App.css";
+import About from "./components/About";
+import Awards from "./components/Awards";
 import Banner from "./components/Banner";
 import Blog from "./components/Blog";
+import CaseStudy from "./components/CaseStudy";
 import Choose from "./components/Choose";
 import Contact from "./components/Contact";
 import Faq from "./components/Faq";
@@ -13,8 +16,11 @@ function App() {
     <>
       <Header />
       <Banner />
+      <Awards/>
       <Choose />
       <Service />
+      <About/>
+      <CaseStudy/>
       <Faq />
       <Blog />
       <Contact />

@@ -42,6 +42,9 @@ const Faq = () => {
      <div className="py-20  max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between ">
       {/* Header Section */}
       <div className="flex flex-col text-left w-[412px]">
+      <p className="text-gray-700 border border-gray-300 rounded-[32px] mb-5 py-2 px-4  w-[62px]">
+          FAQ
+        </p>
         <p className="text-[40px] leading-[40px] font-bold inline-block text-default mb-4">
           Answers to Your Most Common Questions
         </p>
