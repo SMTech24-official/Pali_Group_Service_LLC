@@ -50,12 +50,13 @@ const Choose = () => {
   ];
 
   return (
-    <section className="py-[80px] lg:py-[120px] px-4 sm:px-8 bg-gray-50">
+   <div className="bg-[#EBEBEB]">
+     <section className="py-[80px] lg:py-[120px] px-4 sm:px-8 bg-gray-50 max-w-[1440px] mx-auto">
       <div className="max-w-5xl mx-auto text-center">
         {/* Header Section */}
-        <h2 className="text-gray-700 border border-gray-300 rounded-full w-[200px] mx-auto mb-5 py-1 text-sm">
+        <p className="text-gray-700 border border-gray-300 rounded-[32px] mx-auto mb-5 py-2 px-4 inline-block">
           Why Choose Us
-        </h2>
+        </p>
         <h1 className="text-[28px] sm:text-[36px] lg:text-[40px] font-bold text-gray-800 leading-tight">
           Best Factors to Choose Pali <br /> Construction Service
         </h1>
@@ -96,6 +97,7 @@ const Choose = () => {
         </div>
       </div>
     </section>
+   </div>
   );
 };
 
