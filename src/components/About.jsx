@@ -1,79 +1,109 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const About = () => {
-  // Animation Variants
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        staggerChildren: 0.5, 
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
   return (
-    <motion.div
-      className="max-w-[1440px] mx-auto pb-[60px] md:pb-[120px] lg:pb-[120px] px-4"
+    <div
+      className="max-w-[1440px] mx-auto bg-[#EBEBEB] mb-[120px] py-20 px-5 sm:px-10 lg:px-[97px]"
       id="about"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }} 
-      variants={containerVariants}
     >
-      <motion.div
-        className="flex flex-col-reverse lg:flex-row gap-[60px] items-center lg:items-start"
-        variants={containerVariants}
-      >
-        {/* Image Section */}
-        <motion.div
-          className="w-full lg:w-auto flex justify-center"
-          variants={itemVariants} 
-        >
-          <img
-            className="w-full max-w-[585px]"
-            src="/images/about.png"
-            alt="about image"
-          />
-        </motion.div>
+      {/* Section 1: About Us */}
+      <div className="text-center">
+        <p className="text-sm font-semibold text-gray border border-gray rounded-[30px] inline-block px-4 py-2">
+          About Us
+        </p>
+        <h2 className="text-xl md:text-3xl lg:text-[40px] font-bold text-default my-3 md:leading-[48px] leading-[20px] md:w-[576px] mx-auto w-full">
+          Dedicated to Excellence In the Inspection Process
+        </h2>
+        <p className="text-gray text-sm md:text-base">
+          Pali Group Services offers comprehensive Inspector of Record (IOR)
+          services for HCAi projects, overseeing every phase from inception to
+          completion. We collaborate closely with owners, designers &
+          contractors throughout all stages of construction, ensuring that
+          inspections are conducted thoroughly and that the project progresses
+          on schedule, meeting all required standards for timely and successful
+          completion.
+        </p>
+      </div>
 
-        {/* Content Section */}
-        <motion.div
-          className="w-full lg:w-[525px] text-center md:text-start lg:text-start"
-          variants={itemVariants} 
-        >
-          <p className="text-[#131232] border border-gray px-4 py-1 inline-block rounded-[30px] mb-4">
-            About Us
-          </p>
-          <h2 className="text-3xl leading-[35px] md:text-[40px] font-bold mb-4 md:leading-[48px] text-center lg:text-left">
-            Dedicated to Excellence in Inspection Oversight
-          </h2>
-          <p className="text-gray mb-8 text-center lg:text-left">
-            Pali Group Service provides inspector of record services for HCAi
-            projects, from project beginning to end. Collaborate with the owner,
-            designer and contractors during all the stages of construction to
-            facilitate proper inspections and timely completion of the job.
-          </p>
-          <h2 className="text-[24px] text-default font-bold mb-3 text-center lg:text-left">
-            Our Mission:
-          </h2>
-          <p className="text-gray text-center lg:text-left">
-            We are committed to providing high-quality inspection and reporting
-            services for smaller construction and renovation projects. We take
-            pride in helping you ensure that your project is safe, compliant,
-            and on track.
-          </p>
-        </motion.div>
-      </motion.div>
-    </motion.div>
+      {/* Section 2: Our Mission */}
+      <div className="pt-[60px] pb-20 text-center">
+        <h2 className="text-default text-[20px] md:text-[24px] font-bold">
+          Our mission
+        </h2>
+        <p className="text-gray text-sm md:text-base px-2 md:px-10">
+          We are committed to providing high-quality inspection and
+          documentation services for any size construction and renovation
+          project. We take pride in helping you ensure that your project is
+          compliant and on track.
+        </p>
+      </div>
+
+      {/* Section 3: Founder Info */}
+      <div className="flex flex-col items-center justify-center text-center">
+        <img src="/images/aboutimage2.png" alt="about image" className="" />
+        <h3 className="text-[20px] md:text-[24px] font-bold text-default py-5 md:py-10">
+          Founder of Pali Group Services
+        </h3>
+        <p className="text-gray text-sm md:text-base px-4 sm:px-10">
+          Christina Pali brings over 30 years of experience in construction
+          management to her role as founder of Pali Group Services, established
+          in 2008. She holds a Bachelor of Science with an emphasis in
+          Biochemistry from the University of California, Davis, and completed
+          advanced Master’s studies in Civil Engineering at California State
+          University, Sacramento. As a Women Business Enterprise (WBE),
+          Christina is committed to promoting diversity in the industry.
+        </p>
+        <p className="text-gray py-5 text-sm md:text-base px-4 sm:px-10">
+          Christina’s professional qualifications include certifications as an A
+          License OSHPD/HCAi Inspector of Record, NITC 6020 Medical Gas
+          Inspector, and Asbestos Hazard Emergency Response Act (AHERA)
+          Certificate. She is also certified as a 40-hour HAZWOPER professional
+          and a DHS Lead Inspector/Assessor.
+        </p>
+        <p className="text-gray py-5 text-sm md:text-base px-4 sm:px-10">
+          An active member of multiple professional organizations, Christina is
+          affiliated with the International Federation of Professional and
+          Technical Engineers and the Soil Science Society of America, further
+          demonstrating her commitment to ongoing professional development and
+          industry leadership.
+        </p>
+        <p className="text-gray text-sm md:text-base px-4 sm:px-10">
+          Outside of her professional life, Christina is a dedicated mother who
+          enjoys sailing, hiking, and exploring various outdoor activities.
+          Passionate about healthy cooking, she values quality time spent with
+          family and friends.
+        </p>
+      </div>
+
+      {/* Section 4: Quality Assurance Specialist */}
+      <div className="flex flex-col items-center justify-center text-center">
+        <img
+          src="/images/aboutimage1.png"
+          className="pt-10 md:pt-20 pb-5 md:pb-10"
+          alt="about image"
+        />
+        <h3 className="text-[20px] md:text-[24px] font-bold text-default pb-5 md:pb-10">
+          Quality Assurance and Control Specialist of Pali Group Services
+        </h3>
+        <p className="text-gray pb-5 text-center text-sm md:text-base px-4 sm:px-10">
+          Miceal Moran brings over 30 years of experience in construction and
+          design to the team. A graduate of California Polytechnic State
+          University, San Luis Obispo with a background in architecture and
+          drafting, Miceal is a seasoned professional with deep industry
+          knowledge. As a Quality Assurance and Control Specialist, he ensures
+          that projects are executed efficiently, in full compliance with
+          regulations, and to the highest standards of quality.
+        </p>
+        <p className="text-gray pb-5 text-center text-sm md:text-base px-4 sm:px-10">
+          Beyond his professional accomplishments, Miceal is a dedicated father
+          of four. He is passionate about coaching and mentoring youth in
+          sports, and enjoys drawing, painting, and creating stylized portrait
+          art. An avid snow skier and musician, Miceal has a broad range of
+          personal interests that reflect his commitment to both creativity and
+          an active lifestyle.
+        </p>
+      </div>
+    </div>
   );
 };
 

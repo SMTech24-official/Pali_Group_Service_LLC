@@ -10,6 +10,9 @@ export default {
         gray: "#666782",
       },
     },
+    variants: {
+      scrollbar: ["rounded"],
+    },
   },
   plugins: [],
 };

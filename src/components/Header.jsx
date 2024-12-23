@@ -53,14 +53,14 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-primary shadow-md fixed top-0 left-0 w-full z-50">
-        <nav className="max-w-[1440px] mx-auto py-6 px-4 md:px-8">
+      <header className="bg-[#FFFFFF]  fixed top-0 left-0 w-full z-50">
+        <nav className="max-w-[1440px] mx-auto py-6">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
               <img
-                className="md:w-[145px] w-auto"
-                src="/images/Logo-pali.png"
+                className="md:w-[156px] w-auto"
+                src="/images/logosvg.svg"
                 alt="Logo"
               />
             </div>
@@ -72,18 +72,16 @@ const Header = () => {
                 { id: "why-us", label: "Why Us" },
                 { id: "services", label: "Services" },
                 { id: "about", label: "About Us" },
-                { id: "casestudies", label: "Casestudies" },
                 { id: "faq", label: "FAQ" },
-                { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`font-medium ${
+                  className={` ${
                     activeSection === item.id
-                      ? "text-[#4F95DF]"
-                      : "text-white hover:text-gray-300"
+                      ? "text-default font-bold"
+                      : "text-gray font-semibold hover:text-gray-300 "
                   }`}
                 >
                   {item.label}
