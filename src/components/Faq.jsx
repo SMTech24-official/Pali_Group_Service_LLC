@@ -39,7 +39,7 @@ const Faq = () => {
             <div className="max-h-[200px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
               <ul className="text-gray space-y-6 ml-[60px]">
                 <div>
-                  <h3 className="text-default text-[18px] font-bold pb-4">
+                  <h3 className="text-default text-[18px] font-bold">
                     Key points about an IOR HCAI:
                   </h3>
                 </div>

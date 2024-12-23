@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-[#FFFFFF]  fixed top-0 left-0 w-full z-50">
-        <nav className="max-w-[1440px] mx-auto py-6">
+        <nav className="max-w-[1440px] mx-auto py-6 px-5 md:px-0">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -94,7 +94,7 @@ const Header = () => {
               <button
                 onClick={toggleDrawer}
                 type="button"
-                className="text-white focus:outline-none"
+                className="text-default focus:outline-none"
               >
                 {isDrawerOpen ? "" : <FaBars className="h-6 w-6" />}
               </button>
