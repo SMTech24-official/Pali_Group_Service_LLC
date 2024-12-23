@@ -2,11 +2,11 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <div className="max-w-[1440px] mx-auto  my-20">
+    <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-[97px] my-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[73px]">
         {/* Left Section */}
         <div className="lg:col-span-1">
-          <p className="text-gray-700 border border-gray-300 rounded-[32px] mb-5 py-2 px-4  w-[62px]">
+          <p className="text-gray-700 border border-gray-300 rounded-[32px] mb-5 py-2 px-4 w-[62px]">
             FAQ
           </p>
           <h2 className="text-2xl md:text-3xl lg:text-[40px] font-bold text-default leading-tight">
@@ -21,10 +21,10 @@ const Faq = () => {
         <div className="lg:col-span-2 space-y-8">
           {/* FAQ Item 1 */}
           <div>
-            <h3 className="text-lg font-bold text-default mb-2">
+            <h3 className="text-lg font-bold text-default">
               What is an IOR?
             </h3>
-            <p className="text-gray mb-4">
+            <p className="text-gray my-6">
               An "IOR" in the context of HCAI stands for "Inspector of Record,"
               which refers to a certified inspector specifically approved by the
               California Department of Health Care Access and Information (HCAI)
@@ -35,21 +35,22 @@ const Faq = () => {
               quality of a hospital building.
             </p>
 
+            {/* Scrollable Section */}
             <div className="max-h-[200px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
-              <ul className="text-gray mt-6 mb-8 ml-[60px]">
+              <ul className="text-gray space-y-6 ml-[60px]">
                 <div>
                   <h3 className="text-default text-[18px] font-bold pb-4">
                     Key points about an IOR HCAI:
                   </h3>
                 </div>
-                <li>
+                <li className="mb-6">
                   <span className="font-bold text-default">
                     Certification required:
                   </span>{" "}
                   <br /> To be an IOR, an inspector must pass a specific
                   certification exam administered by HCAI.
                 </li>
-                <li>
+                <li className="mb-6">
                   <span className="font-bold text-default">
                     Continuous Inspection:
                   </span>{" "}
@@ -57,7 +58,7 @@ const Faq = () => {
                   aspects of construction on a hospital project, from foundation
                   laying to final finishes.
                 </li>
-                <li>
+                <li className="mb-6">
                   <span className="font-bold text-default">
                     Compliance with codes:
                   </span>{" "}
@@ -65,7 +66,7 @@ const Faq = () => {
                   work complies with the California Building Standards Code and
                   OSHPD regulations.
                 </li>
-                <li>
+                <li className="mb-6">
                   <span className="font-bold text-default">
                     Reporting responsibility:
                   </span>{" "}
