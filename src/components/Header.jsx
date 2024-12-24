@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; 
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Function to toggle the drawer
   const toggleDrawer = () => {
@@ -15,8 +16,8 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setActiveSection(id); 
-      setIsDrawerOpen(false); 
+      setActiveSection(id);
+      setIsDrawerOpen(false);
     }
   };
 
@@ -43,6 +44,9 @@ const Header = () => {
           }
         }
       });
+
+      // Add shadow to the header on scroll
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -53,7 +57,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-[#FFFFFF]  fixed top-0 left-0 w-full z-50">
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          isScrolled ? "shadow-md bg-[#FFFFFF]" : "bg-[#FFFFFF]"
+        }`}
+      >
         <nav className="max-w-[1440px] mx-auto py-6 px-5 md:px-0">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -78,10 +86,10 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={` ${
+                  className={`${
                     activeSection === item.id
                       ? "text-default font-bold"
-                      : "text-gray font-semibold hover:text-gray-300 "
+                      : "text-gray font-semibold hover:text-gray-300"
                   }`}
                 >
                   {item.label}
@@ -119,7 +127,7 @@ const Header = () => {
                 <FaTimes className="h-6 w-6" />
               </button>
             </div>
-            <div className="flex-grow pl-7 space-y-4 mt-7 ">
+            <div className="flex-grow pl-7 space-y-4 mt-7">
               {[
                 { id: "home", label: "Home" },
                 { id: "why-us", label: "Why Us" },

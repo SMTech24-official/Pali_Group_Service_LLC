@@ -23,19 +23,19 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="bg-gray-50 py-12 px-6 sm:px-12 mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto"
+      className="bg-gray-50 py-12 px-6 md:px-12 lg:px-0 mt-[60px] md:mt-[120px] max-w-[1440px] mx-auto"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.2 }} 
       variants={containerVariants}
     >
       <motion.div
-        className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]"
+        className=" grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]"
         variants={containerVariants}
       >
         {/* Left Section - Logo and Description */}
         <motion.div
-          className="flex flex-col md:items-center items-start md:text-center text-left md:border-r-2 border-[#E6E8EC] pr-[64px]"
+          className="flex flex-col  items-start  text-left md:border-r-2 border-[#E6E8EC] pr-[64px]"
           variants={itemVariants}
         >
           <img

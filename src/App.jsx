@@ -10,6 +10,7 @@ import Faq from "./components/Faq";
 // import Faq from "./components/Faqs";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Inspection from "./components/Inspection";
 import Service from "./components/Service";
 
 function App() {
@@ -17,13 +18,12 @@ function App() {
     <>
       <Header />
       <Banner />
-      <Awards/>
+      <Awards />
       <Choose />
       <Service />
-      <About/>
-      {/* <CaseStudy/> */}
+      <About />
       <Faq />
-      <Blog />
+      <Inspection />
       <Contact />
       <Footer />
     </>
