@@ -46,10 +46,7 @@ const Header = () => {
           "home",
           "why-us",
           "services",
-          "about",
-          "casestudies",
           "faq",
-          "blog",
           "contact",
         ];
 
@@ -94,13 +91,11 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              {[
+              {[ // Links
                 { id: "home", label: "Home" },
                 { id: "why-us", label: "Why Us" },
                 { id: "services", label: "Services" },
-                { id: "about", label: "About Us" },
                 { id: "faq", label: "FAQ" },
-                { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button
@@ -115,6 +110,27 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
+              {/* About Us and Blog Links */}
+              <button
+                onClick={() => scrollToSection("about")}
+                className={`${
+                  location.pathname === "/aboutUs"
+                    ? "text-default font-bold"
+                    : "text-gray font-semibold hover:text-gray-300"
+                }`}
+              >
+                About Us
+              </button>
+              <button
+                onClick={() => scrollToSection("blog")}
+                className={`${
+                  location.pathname === "/blog"
+                    ? "text-default font-bold"
+                    : "text-gray font-semibold hover:text-gray-300"
+                }`}
+              >
+                Blog
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -148,14 +164,11 @@ const Header = () => {
               </button>
             </div>
             <div className="flex-grow pl-7 space-y-4 mt-7">
-              {[
+              {[ // Links
                 { id: "home", label: "Home" },
                 { id: "why-us", label: "Why Us" },
                 { id: "services", label: "Services" },
-                { id: "about", label: "About Us" },
-                { id: "casestudies", label: "Casestudies" },
                 { id: "faq", label: "FAQ" },
-                { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button
@@ -170,6 +183,27 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
+              {/* About Us and Blog Links */}
+              <button
+                onClick={() => scrollToSection("about")}
+                className={`block font-medium ${
+                  location.pathname === "/aboutUs"
+                    ? "text-[#4F95DF]"
+                    : "hover:text-gray-300"
+                }`}
+              >
+                About Us
+              </button>
+              <button
+                onClick={() => scrollToSection("blog")}
+                className={`block font-medium ${
+                  location.pathname === "/blog"
+                    ? "text-[#4F95DF]"
+                    : "hover:text-gray-300"
+                }`}
+              >
+                Blog
+              </button>
             </div>
           </div>
         </div>
