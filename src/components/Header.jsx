@@ -1,49 +1,68 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useNavigate, useLocation } from "react-router-dom"; // Import necessary hooks
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  // Function to handle smooth scrolling and set active section
+  // Function to handle smooth scrolling or navigation
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setActiveSection(id);
-      setIsDrawerOpen(false);
+    if (id === "home") {
+      navigate("/"); // Navigate to the home route
+      setActiveSection("home"); // Set the active section to home
+    } else if (id === "about") {
+      navigate("/aboutUs"); // Navigate to /aboutUs for About Us
+    } else if (id === "blog") {
+      navigate("/blog"); // Navigate to /blog for Blog
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setActiveSection(id);
+        setIsDrawerOpen(false);  
+      }
     }
   };
 
-  // Detect active section while scrolling
+  // Detect active section or route while scrolling
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = [
-        "home",
-        "why-us",
-        "services",
-        "about",
-        "casestudies",
-        "faq",
-        "blog",
-        "contact",
-      ];
+    if (location.pathname === "/") {
+      // Update active section to "home" when on the home route
+      setActiveSection("home");
+    }
 
-      sections.forEach((section) => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
+    const handleScroll = () => {
+      if (location.pathname === "/") {
+        const sections = [
+          "home",
+          "why-us",
+          "services",
+          "about",
+          "casestudies",
+          "faq",
+          "blog",
+          "contact",
+        ];
+
+        sections.forEach((section) => {
+          const element = document.getElementById(section);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top <= 100 && rect.bottom >= 100) {
+              setActiveSection(section);
+            }
           }
-        }
-      });
+        });
+      }
 
       // Add shadow to the header on scroll
       setIsScrolled(window.scrollY > 10);
@@ -53,7 +72,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location.pathname]); // Re-run when the route changes
 
   return (
     <>
@@ -81,6 +100,7 @@ const Header = () => {
                 { id: "services", label: "Services" },
                 { id: "about", label: "About Us" },
                 { id: "faq", label: "FAQ" },
+                { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button

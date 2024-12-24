@@ -6,6 +6,8 @@ html{
 }
 body{
   font-family: "DM Sans", serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .font_popins{
   font-family: "Poppins", serif;
