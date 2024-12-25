@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Inspection = () => {
   return (
@@ -32,13 +33,15 @@ const Inspection = () => {
             Information), formerly OSHPD (Office of Statewide Health Planning
             and Development).
           </p>
-          <motion.button
-            className="flex items-center gap-1 border border-default px-4 py-2 rounded-[30px] font-bold"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Read More <FaArrowRightLong />
-          </motion.button>
+          <Link to="/blog">
+            <motion.button
+              className="flex items-center gap-1 border border-default px-4 py-2 rounded-[30px] font-bold"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Read More <FaArrowRightLong />
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* Image */}

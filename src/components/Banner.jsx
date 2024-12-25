@@ -27,7 +27,7 @@ const Banner = () => {
           className="flex flex-col lg:flex-row items-center"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: false, amount: 0.2 }} // Trigger animation on every scroll near this section
+          viewport={{ once: false, amount: 0.2 }} 
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="text-center mb-8 lg:mb-0 lg:w-[935px] mx-auto w-full">

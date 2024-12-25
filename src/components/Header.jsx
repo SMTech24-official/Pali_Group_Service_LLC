@@ -171,7 +171,7 @@ const Header = () => {
             <div className="pt-4 pl-4 flex items-center justify-between">
               <img
                 className="w-[150px]"
-                src="/images/Logo-pali.png"
+                src="/images/Logo-header.svg"
                 alt="Logo"
               />
               <button onClick={toggleDrawer} className="mr-4">

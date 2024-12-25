@@ -29,7 +29,8 @@ const Footer = () => {
       viewport={{ once: false, amount: 0.2 }}
       variants={containerVariants}
     >
-      <motion.div
+     <div className="max-w-[1170px] mx-auto">
+     <motion.div
         className=" grid grid-cols-1 lg:grid-cols-3 gap-8 border-b border-[#E6E8EC]"
         variants={containerVariants}
       >
@@ -116,6 +117,7 @@ const Footer = () => {
       >
         © 2024 Pali Group Services, LLC. All rights reserved.
       </motion.div>
+     </div>
     </motion.footer>
   );
 };

@@ -10,7 +10,7 @@ const Service = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        staggerChildren: 0.5, 
+        staggerChildren: 0.5,
       },
     },
   };
@@ -26,7 +26,7 @@ const Service = () => {
       id="services"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }} 
+      viewport={{ once: false, amount: 0.2 }}
       variants={containerVariants}
     >
       {/* Header Section */}
@@ -70,12 +70,18 @@ const Service = () => {
             <h3 className="text-xl font-bold mb-4 text-default">
               Constructability Review
             </h3>
+            <p className="text-gray text-sm md:text-base mb-3">
+              Our constructability review ensures that healthcare facility
+              construction or renovation adheres to all relevant standards and
+              regulations, including the California Building Code (CBC), the
+              OSHPD/HCAi-approved Test, Inspection, and Observation (TIO)
+              program, and applicable local codes.
+            </p>
             <p className="text-gray text-sm md:text-base">
-              Verifying that the construction or renovation of healthcare
-              facilities adheres to California Building Standards (CBC),
-              OSHPD/HCAi permitted TIO, and any local requirements. This
-              includes fire, safety, accessibility, and structural integrity
-              standards specific to healthcare facilities.
+              Our thorough review process helps ensure project drawing are
+              address and comprehensive all essential, often overlooked
+              requirements, eliminating potential gaps in code compliance or
+              design.
             </p>
           </div>
         </motion.div>
@@ -91,11 +97,16 @@ const Service = () => {
             className="w-full h-48 object-cover rounded-[10px] mb-8"
           />
           <div>
-            <h3 className="text-xl font-bold mb-4">Site Inspections</h3>
-            <p className="text-gray-600 text-sm md:text-base">
-              Conducting on-site inspections to monitor ongoing construction
-              activities, ensuring that they align with approved plans and
-              specifications.
+            <h3 className="text-xl font-bold mb-4">Inspections</h3>
+            <p className="text-gray text-sm md:text-base">
+              In accordance with Chapter 7 of the California Administrative
+              Code, we perform all required periodic and ongoing inspections for
+              both off-site fabrication and on-site construction activities.
+              These inspections ensure that work conforms to approved
+              construction drawings, specifications, and regulatory
+              requirements. We pride ourselves on fully understanding each phase
+              of the construction process, ensuring quality and consistency
+              throughout.
             </p>
           </div>
         </motion.div>
@@ -112,9 +123,9 @@ const Service = () => {
           />
           <div>
             <h3 className="text-xl font-bold mb-4">Documentation</h3>
-            <p className="text-gray-600 text-sm md:text-base">
+            <p className="text-gray text-sm md:text-base">
               Maintaining thorough records of inspections, testing results,
-              deviations from approved plans, and any corrective actions taken.
+              deviations from approved plans, and any corrective actions taken,
               Proper documentation is crucial for compliance with the permitted
               approved OSHPD/HCAi Plans.
             </p>

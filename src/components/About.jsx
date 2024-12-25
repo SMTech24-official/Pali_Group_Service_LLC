@@ -50,7 +50,7 @@ const About = () => {
               alt="about img"
             />
             <h2 className="text-default font-bold text-[24px] mt-9 mb-5">
-              Founder of Pali Group Services
+            Quality Assurance and Control Specialist
             </h2>
             <p className="text-gray">
               Miceal Moran brings over 30 years of experience in construction

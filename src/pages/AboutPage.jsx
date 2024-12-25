@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-20">
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-[60px]  items-start mb-[120px]">
+      <div className="grid md:grid-cols-2 gap-[30px] md:gap-[60px]  items-start mb-[60px] md:mb-[120px]">
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-[40px] font-bold mb-4">
             Dedicated to Excellence In the Inspection Process
@@ -38,7 +38,7 @@ export default function AboutPage() {
       </div>
 
       {/* Founder Section */}
-      <div className="grid md:grid-cols-2  items-start mb-20">
+      <div className="grid md:grid-cols-2  items-start mb-10 md:mb-20">
         <div>
           <img
             src="/images/pageabout2.png"
@@ -47,7 +47,7 @@ export default function AboutPage() {
           />
         </div>
         <div className="">
-          <h2 className="text-2xl font-bold mb-6 text-default">
+          <h2 className="text-2xl font-bold mb-6 mt-6 md:mt-0 text-default">
             Founder of Pall Group Services
           </h2>
           <div className="space-y-6 text-gray-600">
@@ -95,7 +95,7 @@ export default function AboutPage() {
           />
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-default">
+          <h2 className="text-2xl font-bold mb-4 mt-4 md:mt-4 text-default">
             Quality Assurance & Control Specialist
           </h2>
           <div className="space-y-6 text-gray-600">
