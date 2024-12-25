@@ -56,9 +56,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Pali Group Services was founded in 2008 by Christina Pali. Christina
-              is a UC Davis graduate with a background in geotechnical sciences
-              and civil engineering. (Still working on this)
+              Pali Group Services was founded in 2008 by Christina Pali.
+              Christina is a UC Davis graduate with a background in geotechnical
+              sciences and civil engineering. (Still working on this)
             </motion.p>
             <motion.button
               className="bg-primary text-white px-6 py-3 rounded-[40px] hover:bg-blue-700 transition"
@@ -72,7 +72,26 @@ const Banner = () => {
           </div>
         </motion.div>
 
-        {/* Right Content */}
+        <div className="bg-white shadow-md rounded-lg p-[30px] mt-[60px]">
+          <p className="text-gray mb-3">
+            Our portfolio includes the successful delivery of hundreds of
+            projects across a wide range of industries, demonstrating our
+            proficiency in overseeing complex initiatives from conception to
+            completion. In addition to our extensive work in general
+            construction, we have extensive expertise in remodeling, nursing
+            home and reconstruction projects. We have worked on several
+            multi-million dollar remodels that required precision, strategic
+            vision and expert execution.
+          </p>
+          <p className="text-gray">
+            At PGS, we are guided by a core value: integrity, reliability and an
+            unwavering commitment to excellence. Our collaborative approach
+            involves working closely with project owners, contractors and
+            architects to ensure each project meets HCAi standards and other
+            regulatory requirements while exceeding client expectations.
+          </p>
+        </div>
+        {/* Right Content
         <motion.div
           className="lg:w-1/2 flex justify-center md:top-20 md:left-[700px] relative pb-20"
           initial={{ x: 100, opacity: 0 }}
@@ -89,7 +108,7 @@ const Banner = () => {
               providing clear, actionable insights for our clients.
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );

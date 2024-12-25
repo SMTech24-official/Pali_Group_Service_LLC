@@ -55,7 +55,7 @@ const Header = () => {
           if (element) {
             const rect = element.getBoundingClientRect();
             if (rect.top <= 100 && rect.bottom >= 100) {
-              setActiveSection(section);
+              setActiveSection(`/#${section}`);
             }
           }
         });
