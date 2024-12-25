@@ -46,7 +46,7 @@ const About = () => {
           <div className="border border-[#ADADAD] rounded-[20px] md:w-[570px] w-full p-10">
             <img
               className="w-[120px]"
-              src="/images/aboutimage2.png"
+              src="/images/aboutimage1.png"
               alt="about img"
             />
             <h2 className="text-default font-bold text-[24px] mt-9 mb-5">

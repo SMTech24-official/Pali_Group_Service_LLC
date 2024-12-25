@@ -2,7 +2,7 @@ import React from "react";
 
 const Activity = () => {
   return (
-    <div className="max-w-[1440px] mx-auto pb-[120px] px-4">
+    <div className="max-w-[1440px] mx-auto px-4">
       <div className="border border-r-default rounded-[20px] flex flex-col md:flex-row items-center gap-10 overflow-hidden">
         {/* Left Section */}
         <div className="bg-primary flex items-center justify-center p-10 sm:p-[56px] rounded-[20px] md:rounded-r-none  md:rounded-l-[20px]">
