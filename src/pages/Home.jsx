@@ -7,12 +7,14 @@ import Faq from "../components/Faq";
 import Inspection from "../components/Inspection";
 import Contact from "../components/Contact";
 import About from "../components/About";
+import Activity from "../components/Activity";
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <Awards />
+      <Activity />
       <Choose />
       <Service />
       <About />
