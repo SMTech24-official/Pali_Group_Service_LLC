@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="max-w-[1440px] mx-auto pt-20 px-4 sm:px-8 lg:px-16">
+    <div className="max-w-[1440px] mx-auto pt-20 px-4 sm:px-8 lg:px-16" id="blog">
       <div>
         <h1 className="text-center text-default text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8">
           Ensuring Regulatory Compliance

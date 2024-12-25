@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="max-w-[1170px] mx-auto mb-[120px] px-5 md:px-0">
+    <div className="max-w-[1170px] mx-auto mb-[60px] md:mb-[120px] px-5 md:px-0" id="about">
       <div className="flex gap-8 md:flex-row flex-col">
         <div className="bg-primary md:w-[570px] p-10 rounded-[20px] w-full">
           <p className="text-white border border-gray px-4 py-1 inline-block rounded-[30px] mb-4">
-            Our Services
+           About Us
           </p>
           <h1 className="text-white text-[40px] font-bold leading-[48px] mb-8">
             Dedicated to Excellence In the Inspection Process

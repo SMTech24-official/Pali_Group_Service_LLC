@@ -50,7 +50,7 @@ const Blog = () => {
       id="blog"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }} // Animations trigger when 20% of the section is visible
+      viewport={{ once: false, amount: 0.2 }}
       variants={containerVariants}
     >
       <div className="max-w-[1140px] mx-auto py-[60px] md:py-[120px]">

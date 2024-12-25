@@ -72,7 +72,7 @@ const Banner = () => {
           </div>
         </motion.div>
 
-        <div className="bg-white shadow-md rounded-lg p-[30px] mt-[60px]">
+        <div className="bg-white shadow-md rounded-lg p-[30px] md:mt-[60px] mt-[25px]">
           <p className="text-gray mb-3">
             Our portfolio includes the successful delivery of hundreds of
             projects across a wide range of industries, demonstrating our
@@ -91,24 +91,6 @@ const Banner = () => {
             regulatory requirements while exceeding client expectations.
           </p>
         </div>
-        {/* Right Content
-        <motion.div
-          className="lg:w-1/2 flex justify-center md:top-20 md:left-[700px] relative pb-20"
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: false, amount: 0.2 }}
-          transition={{ duration: 1, delay: 0.6 }}
-        >
-          <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm">
-            <h3 className="text-xl font-bold text-default mb-4">What We Do</h3>
-            <p className="text-[#666782]">
-              We offer comprehensive inspection services, detailed observations,
-              thorough reporting, and expert consultation. Our team ensures the
-              highest standards in evaluating systems, structures, or processes,
-              providing clear, actionable insights for our clients.
-            </p>
-          </div>
-        </motion.div> */}
       </div>
     </motion.div>
   );

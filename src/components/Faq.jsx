@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Faq = () => {
+  const [openFaq, setOpenFaq] = useState(null);
+
+  // FAQ items in an array
+  const faqItems = [
+    {
+      id: 2,
+      question: "How do I schedule an inspection?",
+      answer:
+        "To schedule a construction healthcare inspection, contact us via phone, email, or our website form. Provide project details, preferred date, and receive confirmation promptly.",
+    },
+    {
+      id: 3,
+      question: "How long does an inspection usually take?",
+      answer:
+        "The duration of an inspection varies based on the scope and type, but most inspections typically take between 1 to 3 hours. For larger or more complex properties, it may take longer.",
+    },
+    {
+      id: 4,
+      question: "What types of reports do you provide?",
+      answer:
+        "We provide detailed, easy-to-understand inspection reports that include an overview of findings, photographs, and recommendations. Depending on the inspection type, we may also include specialized reports, such as safety assessments or compliance evaluations.",
+    },
+  ];
+
+  const toggleFaq = (faqId) => {
+    setOpenFaq(openFaq === faqId ? null : faqId);
+  };
+
   return (
     <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-[97px]" id="faq">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[73px]">
@@ -21,9 +50,7 @@ const Faq = () => {
         <div className="lg:col-span-2 space-y-8">
           {/* FAQ Item 1 */}
           <div>
-            <h3 className="text-lg font-bold text-default">
-              What is an IOR?
-            </h3>
+            <h3 className="text-lg font-bold text-default">What is an IOR?</h3>
             <p className="text-gray my-6">
               An "IOR" in the context of HCAI stands for "Inspector of Record,"
               which refers to a certified inspector specifically approved by the
@@ -35,7 +62,6 @@ const Faq = () => {
               quality of a hospital building.
             </p>
 
-            {/* Scrollable Section */}
             <div className="max-h-[200px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
               <ul className="text-gray space-y-6 ml-[60px]">
                 <div>
@@ -77,42 +103,25 @@ const Faq = () => {
             </div>
           </div>
 
-          {/* FAQ Item 2 */}
-          <div>
-            <h3 className="text-lg font-bold text-default mb-2">
-              How do I schedule an inspection?
-            </h3>
-            <p className="text-gray">
-              To schedule a construction healthcare inspection, contact us via
-              phone, email, or our website form. Provide project details,
-              preferred date, and receive confirmation promptly.
-            </p>
-          </div>
-
-          {/* FAQ Item 3 */}
-          <div>
-            <h3 className="text-lg font-bold text-default mb-2">
-              How long does an inspection usually take?
-            </h3>
-            <p className="text-gray">
-              The duration of an inspection varies based on the scope and type,
-              but most inspections typically take between 1 to 3 hours. For
-              larger or more complex properties, it may take longer.
-            </p>
-          </div>
-
-          {/* FAQ Item 4 */}
-          <div>
-            <h3 className="text-lg font-bold text-default mb-2">
-              What types of reports do you provide?
-            </h3>
-            <p className="text-gray">
-              We provide detailed, easy-to-understand inspection reports that
-              include an overview of findings, photographs, and recommendations.
-              Depending on the inspection type, we may also include specialized
-              reports, such as safety assessments or compliance evaluations.
-            </p>
-          </div>
+          {/* FAQ Items (from the array) */}
+          {faqItems.map((faq) => (
+            <div key={faq.id}>
+              <div
+                className="flex justify-between items-center cursor-pointer"
+                onClick={() => toggleFaq(faq.id)}
+              >
+                <h3 className="text-lg font-bold text-default">{faq.question}</h3>
+                {openFaq === faq.id ? (
+                  <FaMinus className="text-default" />
+                ) : (
+                  <FaPlus className="text-default" />
+                )}
+              </div>
+              {openFaq === faq.id && (
+                <p className="text-gray mt-4">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

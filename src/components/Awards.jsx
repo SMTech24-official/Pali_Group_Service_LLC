@@ -15,7 +15,7 @@ const Awards = () => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto py-[120px] px-4">
+    <div className="max-w-[1440px] mx-auto py-[60px] md:py-[120px] px-4">
       {/* Header Section */}
       <motion.div
         className="text-center"
@@ -36,26 +36,7 @@ const Awards = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center">
         {/* Award 1 */}
         <motion.div
-          className="w-full max-w-[250px] text-center"
-          variants={itemVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }} // Animation repeats on every scroll into view
-        >
-          <img
-            src="/images/award1.png"
-            alt="Award 1"
-            className="mx-auto mb-4"
-          />
-          <h2 className="text-[18px] sm:text-[20px] font-bold">
-            OSHPD Inspector of Records
-          </h2>
-          <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
-        </motion.div>
-
-        {/* Award 2 */}
-        <motion.div
-          className="w-full max-w-[250px] text-center"
+          className="w-full max-w-[250px] text-center flex md:flex-col flex-col-reverse"
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
@@ -72,9 +53,9 @@ const Awards = () => {
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
         </motion.div>
 
-        {/* Award 3 */}
+        {/* Award 2 */}
         <motion.div
-          className="w-full max-w-[250px] text-center"
+          className="w-full max-w-[250px] text-center flex md:flex-col flex-col-reverse"
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
@@ -89,6 +70,25 @@ const Awards = () => {
             International Firestop Council Premier
           </h2>
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2024</p>
+        </motion.div>
+
+        {/* Award 3 */}
+        <motion.div
+          className="w-full max-w-[250px] text-center flex md:flex-col flex-col-reverse"
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }} // Animation repeats on every scroll into view
+        >
+          <img
+            src="/images/award1.png"
+            alt="Award 1"
+            className="mx-auto mb-4"
+          />
+          <h2 className="text-[18px] sm:text-[20px] font-bold">
+            OSHPD Inspector of Records
+          </h2>
+          <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
         </motion.div>
       </div>
     </div>

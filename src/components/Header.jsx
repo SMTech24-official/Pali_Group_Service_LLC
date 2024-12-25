@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useNavigate, useLocation } from "react-router-dom"; // Import necessary hooks
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -14,54 +14,75 @@ const Header = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  // Function to handle smooth scrolling or navigation
+  // Function to handle navigation or scrolling
   const scrollToSection = (id) => {
     if (id === "home") {
-      navigate("/"); // Navigate to the home route
-      setActiveSection("home"); // Set the active section to home
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          setActiveSection("home");
+        }, 100);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setActiveSection("home");
+      }
     } else if (id === "about") {
-      navigate("/aboutUs"); // Navigate to /aboutUs for About Us
+      navigate("/aboutUs");
+      setActiveSection("about");
     } else if (id === "blog") {
-      navigate("/blog"); // Navigate to /blog for Blog
+      navigate("/blog");
+      setActiveSection("blog");
+    } else if (["why-us", "services", "faq", "contact"].includes(id)) {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+            setActiveSection(id);
+          }
+        }, 100);
+      } else {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          setActiveSection(id);
+        }
+      }
     } else {
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
         setActiveSection(id);
-        setIsDrawerOpen(false);  
       }
     }
+    setIsDrawerOpen(false);
   };
 
-  // Detect active section or route while scrolling
+  // Detect scrolling and active section
   useEffect(() => {
     if (location.pathname === "/") {
-      // Update active section to "home" when on the home route
       setActiveSection("home");
+    } else if (location.pathname === "/aboutUs") {
+      setActiveSection("about");
+    } else if (location.pathname === "/blog") {
+      setActiveSection("blog");
     }
 
     const handleScroll = () => {
       if (location.pathname === "/") {
-        const sections = [
-          "home",
-          "why-us",
-          "services",
-          "faq",
-          "contact",
-        ];
-
+        const sections = ["home", "why-us", "services", "faq", "contact"];
         sections.forEach((section) => {
           const element = document.getElementById(section);
           if (element) {
             const rect = element.getBoundingClientRect();
             if (rect.top <= 100 && rect.bottom >= 100) {
-              setActiveSection(`/#${section}`);
+              setActiveSection(section);
             }
           }
         });
       }
-
-      // Add shadow to the header on scroll
       setIsScrolled(window.scrollY > 10);
     };
 
@@ -69,7 +90,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [location.pathname]); // Re-run when the route changes
+  }, [location.pathname]);
 
   return (
     <>
@@ -81,21 +102,36 @@ const Header = () => {
         <nav className="max-w-[1440px] mx-auto py-6 px-5 md:px-0">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <Link
+              to="/"
+              className="flex-shrink-0"
+              onClick={() => {
+                if (location.pathname !== "/") {
+                  navigate("/");
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }, 100);
+                } else {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+                setActiveSection("home");
+              }}
+            >
               <img
-                className="md:w-[156px] w-auto"
-                src="/images/logosvg.svg"
+                className="md:w-[160px] w-auto"
+                src="/images/Logo-header.svg"
                 alt="Logo"
               />
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              {[ // Links
+              {[
                 { id: "home", label: "Home" },
-                { id: "why-us", label: "Why Us" },
                 { id: "services", label: "Services" },
-                { id: "faq", label: "FAQ" },
+                { id: "about", label: "About Us" },
+                { id: "why-us", label: "Why Choose Us" },
+                { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button
@@ -110,27 +146,6 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              {/* About Us and Blog Links */}
-              <button
-                onClick={() => scrollToSection("about")}
-                className={`${
-                  location.pathname === "/aboutUs"
-                    ? "text-default font-bold"
-                    : "text-gray font-semibold hover:text-gray-300"
-                }`}
-              >
-                About Us
-              </button>
-              <button
-                onClick={() => scrollToSection("blog")}
-                className={`${
-                  location.pathname === "/blog"
-                    ? "text-default font-bold"
-                    : "text-gray font-semibold hover:text-gray-300"
-                }`}
-              >
-                Blog
-              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -164,11 +179,12 @@ const Header = () => {
               </button>
             </div>
             <div className="flex-grow pl-7 space-y-4 mt-7">
-              {[ // Links
+              {[
                 { id: "home", label: "Home" },
-                { id: "why-us", label: "Why Us" },
                 { id: "services", label: "Services" },
-                { id: "faq", label: "FAQ" },
+                { id: "about", label: "About Us" },
+                { id: "why-us", label: "Why Choose Us" },
+                { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button
@@ -183,27 +199,6 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              {/* About Us and Blog Links */}
-              <button
-                onClick={() => scrollToSection("about")}
-                className={`block font-medium ${
-                  location.pathname === "/aboutUs"
-                    ? "text-[#4F95DF]"
-                    : "hover:text-gray-300"
-                }`}
-              >
-                About Us
-              </button>
-              <button
-                onClick={() => scrollToSection("blog")}
-                className={`block font-medium ${
-                  location.pathname === "/blog"
-                    ? "text-[#4F95DF]"
-                    : "hover:text-gray-300"
-                }`}
-              >
-                Blog
-              </button>
             </div>
           </div>
         </div>

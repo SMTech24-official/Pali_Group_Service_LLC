@@ -11,7 +11,7 @@ const Footer = () => {
       y: 0,
       transition: {
         duration: 1,
-        staggerChildren: 0.3, 
+        staggerChildren: 0.3,
       },
     },
   };
@@ -26,7 +26,7 @@ const Footer = () => {
       className="bg-gray-50 py-12 px-6 md:px-12 lg:px-0 mt-[60px] md:mt-[120px] max-w-[1440px] mx-auto"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }} 
+      viewport={{ once: false, amount: 0.2 }}
       variants={containerVariants}
     >
       <motion.div
@@ -61,11 +61,6 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#why-us" className="hover:text-primary">
-                Why Us
-              </a>
-            </li>
-            <li>
               <a href="#services" className="hover:text-primary">
                 Services
               </a>
@@ -76,34 +71,30 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#case-studies" className="hover:text-primary">
-                Casestudies
+              <a href="#why-us" className="hover:text-primary">
+                Why Choose Us
               </a>
             </li>
+
             <li>
-              <a href="#faq" className="hover:text-primary">
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-primary">
-                Contact
-              </a>
-            </li>
-            <li className="pb-6">
               <a href="#blog" className="hover:text-primary">
                 Blog
+              </a>
+            </li>
+
+            <li className="pb-6">
+              <a href="#contact" className="hover:text-primary">
+                Contact
               </a>
             </li>
           </ul>
         </motion.div>
 
         {/* Right Section - Social Media */}
-        <motion.div
-          className="flex flex-col"
-          variants={itemVariants}
-        >
-          <p className="text-default font-medium mb-8 text-start">Follow us on</p>
+        <motion.div className="flex flex-col" variants={itemVariants}>
+          <p className="text-default font-medium mb-8 text-start">
+            Follow us on
+          </p>
           <div className="flex space-x-4 pb-7 md:pb-0">
             <a href="#" className="text-gray-800 hover:text-primary">
               <FaLinkedin className="w-8 h-8" />

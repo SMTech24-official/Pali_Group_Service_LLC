@@ -5,10 +5,10 @@ const Choose = () => {
   const features = [
     {
       title: "Expertise",
-      description: "25 Years of industry experience & a team of qualified professionals.",
+      description: "30 Years of industry experience & a team of qualified professionals.",
       icon: "/images/expertise.png",
       bgColor: "bg-white",
-      CardBgColor: "bg-[#131232]", // Dark background for the first card
+      CardBgColor: "bg-[#131232]",
     },
     {
       title: "Thoroughness",
@@ -53,7 +53,7 @@ const Choose = () => {
   return (
     <div className="bg-[#EBEBEB]" id="why-us">
       <motion.section
-        className="py-[80px] lg:py-[120px] px-4 sm:px-8 bg-gray-50 max-w-[1440px] mx-auto"
+        className="py-[80px] mb-[60px] lg:mb-[120px] px-4 sm:px-8  max-w-[1440px] mx-auto"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
@@ -71,13 +71,13 @@ const Choose = () => {
             Why Choose Us
           </motion.p>
           <motion.h1
-            className="text-[28px] sm:text-[36px] lg:text-[40px] font-bold text-gray-800 leading-tight"
+            className="text-[28px] sm:text-[36px] lg:text-[40px] font-bold text-gray-800 leading-tight md:w-[460px] mx-auto w-full"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.8 }}
           >
-            Best Factors to Choose Pali <br /> Construction Service
+            Best Factors to Choose Pali Group Services
           </motion.h1>
           <motion.p
             className="text-base sm:text-lg text-gray-600 mb-10 mt-3"

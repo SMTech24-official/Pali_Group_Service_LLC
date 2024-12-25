@@ -22,7 +22,7 @@ const Service = () => {
 
   return (
     <motion.div
-      className="bg-gray-50 md:py-[120px] py-[60px] px-4 md:px-8 max-w-[1440px] mx-auto"
+      className="bg-gray-50 md:pb-[120px] pb-[60px] px-4 md:px-8 max-w-[1440px] mx-auto"
       id="services"
       initial="hidden"
       whileInView="visible"
@@ -39,7 +39,7 @@ const Service = () => {
             Our Services
           </p>
           <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
-            Our Inspection <br /> Services Designed for Pali
+            Our Inspection <br /> Services Designed for Pali Group Services
           </h2>
         </div>
         <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
