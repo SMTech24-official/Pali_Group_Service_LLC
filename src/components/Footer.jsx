@@ -39,9 +39,9 @@ const Footer = () => {
           variants={itemVariants}
         >
           <img
-            src="/images/footerLogo.png"
+            src="/images/Logo-header.svg"
             alt="Pali Group Services"
-            className="w-[150px] mb-4"
+            className="w-[160px] mb-4"
           />
           <p className="text-gray text-lg leading-relaxed">
             Simplify Healthcare Construction Inspections and Build a Safer,
