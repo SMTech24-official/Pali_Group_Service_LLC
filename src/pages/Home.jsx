@@ -8,16 +8,18 @@ import Inspection from "../components/Inspection";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import Activity from "../components/Activity";
+import Dedicate from "../components/Dedicate";
 
 const Home = () => {
   return (
     <div>
       <Banner />
-      <Awards />
       <Activity />
+      <Dedicate/>
       <Service />
       <About />
       <Choose />
+      <Awards />
       <Faq />
       <Inspection />
       <Contact />

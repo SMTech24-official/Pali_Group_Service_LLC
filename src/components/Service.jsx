@@ -39,15 +39,11 @@ const Service = () => {
             Our Services
           </p>
           <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
-            Our Inspection <br /> Services Designed for Pali Group Services
+            Our Inspection Services Designed By Pali Group Services
           </h2>
         </div>
         <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
-          An Inspector of Record (IOR) for small projects under the jurisdiction
-          of OSHPD/HCAi. Our scope of services includes ensuring that a
-          construction project complies with the approved construction drawings,
-          relevant codes, regulations, and safety standards specific to
-          healthcare facilities.
+        We provide inspector of Record (IOR) service for any size projects under the jurisdiction of OSHPD/HCAi. Our scope of services includes ensuring that a construction project compiles with the approved construction drawings, relevant codes, regulations and safety standards specific to healthcare facilities.
         </p>
       </motion.div>
 

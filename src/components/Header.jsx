@@ -168,10 +168,10 @@ const Header = () => {
           } transition-transform duration-300 ease-in-out z-50`}
         >
           <div className="flex flex-col h-full text-white">
-            <div className="pt-4 pl-4 flex items-center justify-between">
+            <div className="pt-4 flex items-center justify-between">
               <img
-                className="w-[150px]"
-                src="/images/Logo-header.svg"
+                className="w-[180px]"
+                src="/images/logo-mobile.svg"
                 alt="Logo"
               />
               <button onClick={toggleDrawer} className="mr-4">

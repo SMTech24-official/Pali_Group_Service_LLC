@@ -1,37 +1,37 @@
-import React, { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { div } from "framer-motion/client";
+import React from "react";
+
 
 const Faq = () => {
-  const [openFaq, setOpenFaq] = useState(null);
+ 
+
 
   // FAQ items in an array
-  const faqItems = [
-    {
-      id: 2,
-      question: "How do I schedule an inspection?",
-      answer:
-        "To schedule a construction healthcare inspection, contact us via phone, email, or our website form. Provide project details, preferred date, and receive confirmation promptly.",
-    },
-    {
-      id: 3,
-      question: "How long does an inspection usually take?",
-      answer:
-        "The duration of an inspection varies based on the scope and type, but most inspections typically take between 1 to 3 hours. For larger or more complex properties, it may take longer.",
-    },
-    {
-      id: 4,
-      question: "What types of reports do you provide?",
-      answer:
-        "We provide detailed, easy-to-understand inspection reports that include an overview of findings, photographs, and recommendations. Depending on the inspection type, we may also include specialized reports, such as safety assessments or compliance evaluations.",
-    },
-  ];
+  // const faqItems = [
+  //   {
+  //     id: 2,
+  //     question: "How do I schedule an inspection?",
+  //     answer:
+  //       "To schedule a construction healthcare inspection, contact us via phone, email, or our website form. Provide project details, preferred date, and receive confirmation promptly.",
+  //   },
+  //   {
+  //     id: 3,
+  //     question: "How long does an inspection usually take?",
+  //     answer:
+  //       "The duration of an inspection varies based on the scope and type, but most inspections typically take between 1 to 3 hours. For larger or more complex properties, it may take longer.",
+  //   },
+  //   {
+  //     id: 4,
+  //     question: "What types of reports do you provide?",
+  //     answer:
+  //       "We provide detailed, easy-to-understand inspection reports that include an overview of findings, photographs, and recommendations. Depending on the inspection type, we may also include specialized reports, such as safety assessments or compliance evaluations.",
+  //   },
+  // ];
 
-  const toggleFaq = (faqId) => {
-    setOpenFaq(openFaq === faqId ? null : faqId);
-  };
-
+ 
   return (
-    <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-[97px]" id="faq">
+    <div className="bg-[#EBEBEB] py-10 md:py-20">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-[97px]" id="faq">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[73px]">
         {/* Left Section */}
         <div className="lg:col-span-1">
@@ -103,27 +103,10 @@ const Faq = () => {
             </div>
           </div>
 
-          {/* FAQ Items (from the array) */}
-          {faqItems.map((faq) => (
-            <div key={faq.id}>
-              <div
-                className="flex justify-between items-center cursor-pointer"
-                onClick={() => toggleFaq(faq.id)}
-              >
-                <h3 className="text-lg font-bold text-default">{faq.question}</h3>
-                {openFaq === faq.id ? (
-                  <FaMinus className="text-default" />
-                ) : (
-                  <FaPlus className="text-default" />
-                )}
-              </div>
-              {openFaq === faq.id && (
-                <p className="text-gray mt-4">{faq.answer}</p>
-              )}
-            </div>
-          ))}
+         
         </div>
       </div>
+    </div>
     </div>
   );
 };

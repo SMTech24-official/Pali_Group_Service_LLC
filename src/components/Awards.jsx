@@ -15,7 +15,7 @@ const Awards = () => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto py-[60px] md:py-[120px] px-4">
+    <div className="max-w-[1440px] mx-auto pb-[60px] md:pb-[120px] px-4">
       {/* Header Section */}
       <motion.div
         className="text-center"
@@ -78,15 +78,15 @@ const Awards = () => {
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }} // Animation repeats on every scroll into view
+          viewport={{ once: false, amount: 0.2 }} 
         >
           <img
-            src="/images/award1.png"
+            src="/images/award-33.svg"
             alt="Award 1"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
-            OSHPD Inspector of Records
+            OSHPD/HCAi Inspector of Records
           </h2>
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
         </motion.div>
