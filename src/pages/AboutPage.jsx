@@ -8,7 +8,7 @@ export default function AboutPage() {
             Dedicated to Excellence In the Inspection Process
           </h1>
           <div className="">
-            <p className="text-gray-600">
+            <p className="text-gray">
               Pali Group Services offers comprehensive Inspector of Record (IOR)
               services for HCAi projects, overseeing every phase from inception
               to completion. We collaborate closely with owners, designers &
@@ -21,7 +21,7 @@ export default function AboutPage() {
               <h2 className="text-xl md:text-[24px] font-semibold mb-2 text-default">
                 Our Mission:
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray">
                 We are committed to providing high-quality inspection and
                 documentation services for any size construction and renovation
                 project. We take pride in helping you ensure that your project
@@ -52,7 +52,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold mb-6 mt-6 md:mt-0 text-default">
             Founder of Pali Group Services
           </h2>
-          <div className="space-y-6 text-gray-600">
+          <div className="space-y-6 text-gray">
             <p className="text-gray">
               Christina Pali brings over 30 years of experience in construction
               management to her role as founder of Pali Group Services,
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold mb-4 mt-4 md:mt-4 text-default">
             Quality Assurance & Control Specialist
           </h2>
-          <div className="space-y-6 text-gray-600">
+          <div className="space-y-6 text-gray">
             <p className="text-gray">
               Miceal Moran brings over 30 years of experience in construction
               and design to the team. A graduate of California Polytechnic State

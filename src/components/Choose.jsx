@@ -80,7 +80,7 @@ const Choose = () => {
             Best Factors to Choose Pali Group Services
           </motion.h1>
           <motion.p
-            className="text-base sm:text-lg text-gray-600 mb-10 mt-3"
+            className="text-base sm:text-lg text-gray-600 mb-10 mt-3 text-gray"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.2 }}

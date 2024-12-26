@@ -43,7 +43,11 @@ const Service = () => {
           </h2>
         </div>
         <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
-        We provide inspector of Record (IOR) service for any size projects under the jurisdiction of OSHPD/HCAi. Our scope of services includes ensuring that a construction project compiles with the approved construction drawings, relevant codes, regulations and safety standards specific to healthcare facilities.
+          We provide inspector of Record (IOR) service for any size projects
+          under the jurisdiction of OSHPD/HCAi. Our scope of services includes
+          ensuring that a construction project compiles with the approved
+          construction drawings, relevant codes, regulations and safety
+          standards specific to healthcare facilities.
         </p>
       </motion.div>
 

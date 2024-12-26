@@ -16,7 +16,7 @@ const Blog = () => {
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
-        <div className="mt-5 mb-10 md:mb-20 lg:mt-10">
+        <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
             Healthcare facilities are subject to a wide range of regulations to
             safeguard patient well-being, staff safety, and overall public
@@ -47,7 +47,7 @@ const Blog = () => {
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
-        <div className="mt-5 mb-10 md:mb-20 lg:mt-10">
+        <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
             Healthcare facilities must be built to withstand rigorous demands,
             including the safety Of patients, staff, and visitors, especially in
@@ -72,26 +72,30 @@ const Blog = () => {
       {/* Blog 3 */}
       <div className="mt-16">
         <h1 className="text-center text-default text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8">
-          Structural Integrity in Healthcare Projects
+          Verifying Adherence to Approved Plans
         </h1>
         <img
           src="/images/blog333.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
-        <div className="mt-5 mb-10 md:mb-20 lg:mt-10">
+        <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Structural integrity is a cornerstone of healthcare construction.
-            Healthcare facilities must withstand natural disasters, heavy
-            equipment loads, and daily operational demands. Properly designed
-            and constructed facilities ensure the safety and longevity of
-            buildings.
+            In healthcare construction, minor changes or deviations from the
+            approved plans can have significant consequences. Inspections ensure
+            that the project is proceeding as designed and that any
+            modifications are reviewed and approved in accordance with HCAi and
+            OSHPD standards. This adherence to approved plans is critical to the
+            overall success Of the project, ensuring that the facility is
+            functional and safe for its intended use.
           </p>
           <p className="mt-4 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Inspections throughout the construction process ensure adherence to
-            design specifications, building codes, and engineering standards.
-            This oversight helps identify and address issues early, avoiding
-            costly delays.
+            Furthermore, inspections provide a systematic process for
+            documentation. Every inspection is recorded and tracked, creating a
+            verifiable history of compliance and decisions made throughout the
+            construction process. This documentation is essential for both
+            project management and for future reference when maintaining or
+            modifying the facility.
           </p>
         </div>
       </div>
@@ -99,25 +103,28 @@ const Blog = () => {
       {/* Blog 4 */}
       <div className="mt-16">
         <h1 className="text-center text-default text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8">
-          Accessibility Standards in Healthcare
+          Managing Timelines and Cost Efficiency
         </h1>
         <img
           src="/images/blog444.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
-        />
-        <div className="mt-5 mb-10 md:mb-20 lg:mt-10">
+        /> 
+        <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Accessibility is a critical aspect of healthcare construction.
-            Ensuring that facilities are accessible to all patients, including
-            those with disabilities, reflects a commitment to equitable
-            healthcare services. This includes ramps, elevators, and
-            appropriately designed patient rooms.
+            Timely inspections contribute directly to the success of a project
+            by identifying issues early, reducing the likelihood of expensive
+            delays and rework. When issues are caught in the early stages of
+            construction, corrections are often easier and less costly to
+            address.
           </p>
           <p className="mt-4 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Regular inspections verify compliance with accessibility
-            requirements, ensuring healthcare facilities are welcoming and
-            usable for all.
+            By collaborating closely with the owner, designer, and contractors,
+            an Inspector Of Record helps ensure that inspections are scheduled
+            appropriately throughout the lifecycle of the project, minimizing
+            disruptions and maintaining a steady construction pace. This
+            proactive approach ensures that the project stays on track, on
+            budget. and in line with the desired completion timeline.
           </p>
         </div>
       </div>
@@ -125,26 +132,51 @@ const Blog = () => {
       {/* Blog 5 */}
       <div className="mt-16">
         <h1 className="text-center text-default text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8">
-          Specialized Healthcare Systems
+          Facilitating HCAi/OSHPD Approval
         </h1>
         <img
           src="/images/blog555.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
-        <div className="mt-5 mb-10 md:mb-20 lg:mt-10">
+        <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Healthcare facilities rely on specialized systems such as HVAC,
-            electrical, plumbing, and medical gas systems to ensure safe and
-            effective operations. These systems require precise design and
-            installation to meet stringent healthcare standards.
+            HCAi and OSHPD regulations govern the construction of healthcare
+            facilities in California. from new hospitals to outpatient centers
+            and other medical facilities. Compliance with these regulations is
+            crucial for obtaining the final Certificate of Occupancy and for
+            passing inspections required for building licensure.
           </p>
           <p className="mt-4 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Inspectors monitor the installation and operation of these systems,
-            verifying that they meet regulatory requirements and function
-            seamlessly within the facility.
+            The Inspector of Record plays a key role in ensuring that all
+            construction activities align with these state-specific regulatory
+            requirements. facilitating the timely approval process and
+            minimizing the risk of non-compliance. Inspections are designed to
+            verify that all elements of the building—from the
+            structuralframework to the HVAC systems—meet the high standards
+            required for healthcare environments.
           </p>
         </div>
+      </div>
+
+      {/* conculsion */}
+      <div className="mt-10 md:mt-20 max-w-[1170px] mx-auto">
+        <h2 className="text-default font-bold text-[24px] mb-8">Conclusion</h2>
+        <p className="mb-4 text-gray">
+          In healthcare construction, inspections are not just a formality—they
+          are an integral part of ensuring that projects are completed safely,
+          efficiently, and in full compliance with all regulatory standards. By
+          working closely with HCAi and OSHPD, the Inspector of Record (IOR)
+          ensures that healthcare facilities are built to the highest standards
+          of safety, quality, and functionality, providing a strong foundation
+          for both the construction team and the end-users of the facility.
+        </p>
+        <p className="text-gray">
+          Through diligent inspections, compliance with regulatory requirements,
+          and rigorous attention to detail, healthcare infrastructure projects
+          can move forward with confidence, knowing that they will meet the
+          complex needs of both patients and healthcare providers.
+        </p>
       </div>
     </div>
   );
