@@ -40,25 +40,31 @@ const Blog = () => {
       {/* Blog 2 */}
       <div className="mt-16">
         <h1 className="text-center text-default text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8">
-          Importance of Fire and Life Safety
+          Promoting Safety and Quality
         </h1>
         <img
-          src="/images/blog2.png"
+          src="/images/blog222.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            Fire and life safety standards ensure the protection of patients,
-            staff, and visitors in healthcare facilities. By adhering to
-            stringent regulations, healthcare projects prioritize the safety of
-            everyone involved. These standards address fire suppression
-            systems, evacuation routes, and emergency response systems.
+            Healthcare facilities must be built to withstand rigorous demands,
+            including the safety Of patients, staff, and visitors, especially in
+            the case of natural disasters, emergencies, and health-related
+            crises. This makes regular inspections a vital part Of ensuring that
+            safety features—such as fire protection systems, emergency exits,
+            structural reinforcements, and infection control systems—are
+            effectively integrated into the design and construction.
           </p>
           <p className="mt-4 text-gray text-[14px] sm:text-[16px] leading-relaxed">
-            The Inspector of Record collaborates with project teams to verify
-            compliance with these critical requirements, ensuring healthcare
-            facilities are equipped to handle emergencies effectively.
+            By conducting periodic and continuous inspections, an Inspector of
+            Record can identify potential safety hazards, design flaws, or
+            non-compliant elements before they lead to costly delays or safety
+            risks. These inspections help to confirm that the construction is
+            progressing in alignment with approved designs, specifications, and
+            regulatory requirements, while maintaining the highest standards of
+            quality.
           </p>
         </div>
       </div>
@@ -69,7 +75,7 @@ const Blog = () => {
           Structural Integrity in Healthcare Projects
         </h1>
         <img
-          src="/images/blog3.png"
+          src="/images/blog333.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
@@ -96,7 +102,7 @@ const Blog = () => {
           Accessibility Standards in Healthcare
         </h1>
         <img
-          src="/images/blog4.png"
+          src="/images/blog444.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
@@ -122,7 +128,7 @@ const Blog = () => {
           Specialized Healthcare Systems
         </h1>
         <img
-          src="/images/blog5.png"
+          src="/images/blog555.png"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
