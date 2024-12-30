@@ -188,7 +188,7 @@ const Contact = () => {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-center justify-center lg:justify-start">
-                <FaPhoneAlt className="text-blue-400 mr-2" /> (000) 000-0000
+                <FaPhoneAlt className="text-blue-400 mr-2" /> +1 415-297-3432
               </li>
               <li className="flex items-center justify-center lg:justify-start">
                 <FaEnvelope className="text-blue-400 mr-2" />{" "}

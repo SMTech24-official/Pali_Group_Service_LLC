@@ -9,7 +9,7 @@ const Awards = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8, // Animation duration
+        duration: 0.8, 
       },
     },
   };
@@ -120,7 +120,7 @@ const Awards = () => {
             alt="Award 1"
             className="mx-auto mb-4"
           />
-          <h2 className="text-[18px] sm:text-[20px] font-bold md:mt-8 mb-8">
+          <h2 className="text-[18px] sm:text-[20px] font-bold">
             Soil Science Society of America
           </h2>
          
@@ -138,7 +138,7 @@ const Awards = () => {
             alt="Award 1"
             className="mx-auto mb-4"
           />
-          <h2 className="text-[18px] sm:text-[20px] font-bold md:mt-8 mb-8">
+          <h2 className="text-[18px] sm:text-[20px] font-bold ">
             International Code Council
           </h2>
         
