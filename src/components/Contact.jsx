@@ -98,7 +98,7 @@ const Contact = () => {
           Let’s Build a Better <br /> Healthcare Future
         </h2>
         <p className="text-[#FFFFFF] text-[16px] md:text-[18px] mt-4">
-          Contact Pali Group Service for expert <br /> inspections you can rely
+        Contact Pali Group Services to secure an IOR <br /> or firestopping inspector for your project.
           on.
         </p>
       </motion.div>
@@ -113,8 +113,8 @@ const Contact = () => {
           className="bg-white text-black p-8 rounded-[20px] shadow-md w-full max-w-[432px] mx-auto lg:mx-0"
           variants={itemVariants}
         >
-          <h2 className="text-center text-[40px] font-bold mb-6 leading-[48px]">
-            Be updated <br /> sending request
+          <h2 className="text-center text-[24px] font-bold mb-6 leading-[28px]">
+          Send a request for more information on how we can help with your project!
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
@@ -184,25 +184,37 @@ const Contact = () => {
         >
           <div>
             <h3 className="text-[24px] font-bold mb-4 text-center lg:text-left">
-              Direct Contact Information
+            Contact Us:
             </h3>
-            <p className="text-[#FFFFFF] text-[16px] lg:text-[18px] mb-8 text-center lg:text-left">
-              We always pay attention to our customer words. We don’t miss a
-              single word from customers. So you can directly contact us through
-              phone, email, or address.
-            </p>
             <ul className="space-y-4">
               <li className="flex items-center justify-center lg:justify-start">
                 <FaPhoneAlt className="text-blue-400 mr-2" /> (000) 000-0000
               </li>
               <li className="flex items-center justify-center lg:justify-start">
                 <FaEnvelope className="text-blue-400 mr-2" />{" "}
-                inspections@paligroupservice.com
+                christina.pali@paligroupservices.org
               </li>
               <li className="flex items-center justify-center lg:justify-start">
-                <FaMapMarkerAlt className="text-blue-400 mr-2" /> Place Business
-                Location Here
+                <FaEnvelope className="text-blue-400 mr-2" />{" "}
+                miceal.moran@paligroupservices.org
               </li>
+              <li className="flex items-center justify-center lg:justify-start">
+                <FaEnvelope className="text-blue-400 mr-2" />{" "}
+                inspections@paligroupservices.org
+              </li>
+              <li className="flex items-center justify-center lg:justify-start">
+                <FaEnvelope className="text-blue-400 mr-2" />{" "}
+                admin@paligroupservices.org
+              </li>
+              <li className="flex items-center justify-center lg:justify-start">
+                <FaEnvelope className="text-blue-400 mr-2" />{" "}
+                firestopping@paligroupservices.org
+              </li>
+              <li className="flex items-center justify-center lg:justify-start">
+                <FaEnvelope className="text-blue-400 mr-2" />{" "}
+                support@paligroupservices.org
+              </li>
+              
             </ul>
           </div>
         </motion.div>

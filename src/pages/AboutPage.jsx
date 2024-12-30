@@ -57,31 +57,29 @@ export default function AboutPage() {
               Christina Pali brings over 30 years of experience in construction
               management to her role as founder of Pali Group Services,
               established in 2008. She holds a Bachelor of Science with an
-              emphasis in Biochemistry from the University of California, Davis,
-              and completed advanced Master's studies in Civil Engineering at
-              California State University, Sacramento. As a Women Business
-              Enterprise (WBE), Christina is committed to promoting diversity in
-              the industry.
+              emphasis in Biogeochemistry from the University of California,
+              Davis, and completed advanced Master's studies in Civil
+              Engineering at California State University, Sacramento. As a Women
+              Business Enterprise (WBE), Christina is committed to promoting
+              diversity in the industry.
             </p>
             <p className="text-gray">
               Christina's professional qualifications include certifications as
-              an A License OSHPD/HCAi Inspector of Record. NITC 6020 Medical Gas
-              Inspector, and Asbestos Hazard Emergency Response Act (AHERA)
-              Certificate. She is also certified as a 40-hour HAZWOPER
-              professional and a DHS Lead Inspector/Assessor.
+              an A License OSHPD/HCAi Inspector of Record, IFC Premier
+              Firestopping Special Inspector, NITC 6020 Medical Gas Inspector,
+              and Asbestos Hazard Emergency Response Act (AHERA) Certificate.
+              She is also OSHA 40-hour HAZWOPER trained and has a background as
+              a DHS Lead Inspector/Assessor.
             </p>
             <p className="text-gray">
-              An active member of multiple professional organizations. Christina
+              An active member of multiple professional organizations, Christina
               is affiliated with the International Federation of Professional
               and Technical Engineers and the Soil Science Society of America,
               further demonstrating her commitment to ongoing professional
-              development and industry leadership.
-            </p>
-            <p className="text-gray">
-              Outside of her professional life, Christina is a dedicated mother
-              who enjoys sailing, hiking, and exploring various outdoor
-              activities. Passionate about healthy cooking, she values quality
-              time spent with family and friends.
+              development and industry leadership. Outside of her professional
+              life, Christina is a dedicated mother who enjoys sailing, hiking,
+              and exploring various outdoor activities. Passionate about healthy
+              cooking, she values quality time spent with family and friends.
             </p>
           </div>
         </div>

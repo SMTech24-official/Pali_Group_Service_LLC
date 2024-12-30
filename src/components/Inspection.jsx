@@ -22,8 +22,7 @@ const Inspection = () => {
           viewport={{ once: true }}
         >
           <h1 className="text-3xl md:text-4xl lg:text-[40px] leading-[48px] font-bold text-default">
-            The Role of Inspections in Healthcare Construction: HCAi & OSHPD
-            Compliance
+          The Role of Inspections in Healthcare Construction: HCAi/OSHPD Compliance
           </h1>
           <p className="text-gray mt-3 mb-8">
             In healthcare construction, ensuring the safety, functionality, and

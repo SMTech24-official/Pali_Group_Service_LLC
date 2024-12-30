@@ -27,7 +27,7 @@ const About = () => {
             Christina Pali brings over 30 years of experience in construction
             management to her role as founder of Pali Group Services,
             established in 2008. She holds a Bachelor of Science with an
-            emphasis in Biochemistry from the University of California...
+            emphasis in Biogeochemistry from the California University...
             <Link
               to="/aboutUs"
               className="text-blue-600 font-bold underline ml-1"
