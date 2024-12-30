@@ -145,7 +145,7 @@ const Awards = () => {
         </motion.div>
         {/* Award 7*/}
         <motion.div
-          className="w-full max-w-[250px] text-center flex md:flex-col flex-col-reverse md:justify-center md:items-center"
+          className="w-full col-span-full max-w-[250px] text-center flex md:flex-col flex-col-reverse md:justify-center md:items-center"
           variants={itemVariants}
           initial="hidden"
           whileInView="visible"

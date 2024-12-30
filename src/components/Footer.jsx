@@ -102,14 +102,19 @@ const Footer = () => {
               Follow us on
             </p>
             <div className="flex space-x-4 pb-7 md:pb-0">
-              <a href="https://www.facebook.com/people/Pali-Group-Services-LLC/61571270249881/?mibextid=wwXIfr" target="_blank"  className="w-8 h-8 rounded-[8px] bg-primary flex justify-center items-center">
+              <a
+                href="https://www.facebook.com/people/Pali-Group-Services-LLC/61571270249881/?mibextid=wwXIfr"
+                target="_blank"
+                className="w-8 h-8 rounded-[8px] bg-primary flex justify-center items-center"
+              >
                 <FaFacebookF className="text-white w-4 h-4" />
               </a>
-              <a href="https://www.instagram.com/paligroupservicesllc/?igsh=NTc4MTIwNjQ2YQ%3D%3D#" target="_blank" className="w-8 h-8 border-[1.5px] border-primary rounded-[8px] flex items-center justify-center">
-              <FaInstagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-800 hover:text-primary">
-                <FaTwitter className="w-8 h-8 text-primary" />
+              <a
+                href="https://www.instagram.com/paligroupservicesllc/?igsh=NTc4MTIwNjQ2YQ%3D%3D#"
+                target="_blank"
+                className="w-8 h-8 border-[1.5px] border-primary rounded-[8px] flex items-center justify-center"
+              >
+                <FaInstagram className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
