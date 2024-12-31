@@ -43,7 +43,7 @@ const Awards = () => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <img
-            src="/images/award2.png"
+            src="/images/a1.svg"
             alt="Award 2"
             className="mx-auto mb-4"
           />
@@ -86,7 +86,7 @@ const Awards = () => {
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
-          OSHPD/HCAi Inspector of Record "A" License 
+          OSHPD/HCAi Inspector of Record "A" License
           </h2>
           <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
         </motion.div>
