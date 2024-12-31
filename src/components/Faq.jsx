@@ -62,7 +62,7 @@ const Faq = () => {
               quality of a hospital building.
             </p>
 
-            <div className="max-h-[200px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+            <div className="">
               <ul className="text-gray space-y-6 ml-[60px]">
                 <div>
                   <h3 className="text-default text-[18px] font-bold">

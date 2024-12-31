@@ -99,7 +99,6 @@ const Contact = () => {
         </h2>
         <p className="text-[#FFFFFF] text-[16px] md:text-[18px] mt-4">
         Contact Pali Group Services to secure an IOR <br /> or firestopping inspector for your project.
-          on.
         </p>
       </motion.div>
 
@@ -189,18 +188,6 @@ const Contact = () => {
             <ul className="space-y-4">
               <li className="flex items-center justify-center lg:justify-start">
                 <FaPhoneAlt className="text-blue-400 mr-2" /> +1 415-297-3432
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <FaEnvelope className="text-blue-400 mr-2" />{" "}
-                christina.pali@paligroupservices.org
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <FaEnvelope className="text-blue-400 mr-2" />{" "}
-                miceal.moran@paligroupservices.org
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <FaEnvelope className="text-blue-400 mr-2" />{" "}
-                inspections@paligroupservices.org
               </li>
               <li className="flex items-center justify-center lg:justify-start">
                 <FaEnvelope className="text-blue-400 mr-2" />{" "}

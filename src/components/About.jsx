@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -20,9 +21,15 @@ const About = () => {
               alt="Christina Pali"
             />
           </div>
-          <h2 className="text-default font-bold text-[24px] mt-6 mb-4">
+          <h2 className="text-default font-bold text-[24px] mt-6">
             Christina Pali, IOR
           </h2>
+          <p className="flex items-center gap-2  mb-5">
+            <MdOutlineEmail className="text-gray" />{" "}
+            <span className="text-base text-[#262626]">
+              christina.pali@paligroupservices.org
+            </span>
+          </p>
           <p className="text-gray leading-relaxed">
             Christina Pali brings over 30 years of experience in construction
             management to her role as founder of Pali Group Services,
@@ -46,9 +53,15 @@ const About = () => {
               alt="Miceal Moran"
             />
           </div>
-          <h2 className="text-default font-bold text-[24px] mt-6 mb-4">
+          <h2 className="text-default font-bold text-[24px] mt-6">
             Miceal Moran, Document Control QA/QC
           </h2>
+          <p className="flex items-center gap-2  mb-5">
+            <MdOutlineEmail className="text-gray" />{" "}
+            <span className="text-base text-[#262626]">
+              miceal.moran@paligroupservices.org
+            </span>
+          </p>
           <p className="text-gray leading-relaxed">
             Miceal Moran brings over 30 years of experience in construction and
             design to the team. A graduate of California Polytechnic State

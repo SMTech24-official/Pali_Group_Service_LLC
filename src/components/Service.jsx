@@ -39,7 +39,7 @@ const Service = () => {
             Our Services
           </p>
           <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
-            Our Inspection Services Designed By Pali Group Services
+            Our Inspection Services Provided By Pali Group Services
           </h2>
           <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
             We provide inspector of Record (IOR) service for any size projects
@@ -55,11 +55,12 @@ const Service = () => {
             Expertise
           </h2>
           <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left mb-3">
-            We provide inspector of Record (IOR) service for any size projects
-            under the jurisdiction of OSHPD/HCAi. Our scope of services includes
-            ensuring that a construction project compiles with the approved
-            construction drawings, relevant codes, regulations and safety
-            standards specific to healthcare facilities.
+            In California, specialized training is required for Local/Regional
+            Third-Party Firestop Special Inspectors. Christina Pali holds the
+            prestigious Premier Certification from the International Firestop
+            Council (IFC), a program that is formally recognized by the HCAI
+            (Health Care Access and Information, formerly OSHPD) as providing
+            sufficient and suitable firestop knowledge.
           </p>
           <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
             Pali Group Services offers a one-stop solution for Inspection of

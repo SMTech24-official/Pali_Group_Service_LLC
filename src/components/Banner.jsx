@@ -13,11 +13,11 @@ const Banner = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/banner-bg.png"
+          src="/images/Pali-image.svg"
           alt="Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full lg:h-[990px]  object-cover"
         />
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0"></div>
       </div>
 
       {/* Content */}
@@ -62,7 +62,7 @@ const Banner = () => {
               16 years of specialized experience, we are committed to ensuring
               compliance with managing comprehensive project inspections,
               regulatory requirements, and consistently delivering high-quality
-              outcomes for our clients.
+              outcome for our clients.
             </motion.p>
           </div>
         </motion.div>

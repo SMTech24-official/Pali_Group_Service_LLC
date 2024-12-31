@@ -1,3 +1,5 @@
+import { MdOutlineEmail } from "react-icons/md";
+
 export default function AboutPage() {
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-20">
@@ -49,9 +51,15 @@ export default function AboutPage() {
           />
         </div>
         <div className="">
-          <h2 className="text-2xl font-bold mb-6 mt-6 md:mt-0 text-default">
-            Founder of Pali Group Services
+          <h2 className="text-2xl font-bold mt-6 md:mt-0 text-default">
+            Christina Pali, IOR
           </h2>
+          <p className="flex items-center gap-2 mt-1  mb-6">
+            <MdOutlineEmail className="text-gray" />{" "}
+            <span className="text-base text-[#262626]">
+              christina.pali@paligroupservices.org
+            </span>
+          </p>
           <div className="space-y-6 text-gray">
             <p className="text-gray">
               Christina Pali brings over 30 years of experience in construction
@@ -95,9 +103,15 @@ export default function AboutPage() {
           />
         </div>
         <div>
-          <h2 className="text-2xl font-bold mb-4 mt-4 md:mt-4 text-default">
-            Quality Assurance & Control Specialist
+          <h2 className="text-2xl font-bold mt-4 md:mt-4 text-default">
+            Miceal Moran, Document Control QA/QC
           </h2>
+          <p className="flex items-center gap-2 mt-1  mb-6">
+            <MdOutlineEmail className="text-gray" />{" "}
+            <span className="text-base text-[#262626]">
+              miceal.moran@paligroupservices.org
+            </span>
+          </p>
           <div className="space-y-6 text-gray">
             <p className="text-gray">
               Miceal Moran brings over 30 years of experience in construction

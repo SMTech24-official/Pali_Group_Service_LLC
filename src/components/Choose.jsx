@@ -5,10 +5,11 @@ const Choose = () => {
   const features = [
     {
       title: "Expertise",
-      description: "30 Years of industry experience & a team of qualified professionals.",
-      icon: "/images/expertise.png",
-      bgColor: "bg-white",
-      CardBgColor: "bg-[#131232]",
+      description:
+        "30 Years of industry experience & a team of qualified professionals.",
+      icon: "/images/Chalkboard.svg",
+      bgColor: "bg-[#131232]",
+      CardBgColor: "bg-white",
     },
     {
       title: "Thoroughness",
@@ -29,7 +30,7 @@ const Choose = () => {
       title: "Customer-Focused",
       description:
         "We prioritize your needs and offer tailored solutions for your specific requirements to keep projects on track.",
-      icon: "/images/expertise.png",
+      icon: "/images/Chalkboard.svg",
       bgColor: "bg-[#67C99E]",
       CardBgColor: "bg-white",
     },
@@ -43,7 +44,8 @@ const Choose = () => {
     },
     {
       title: "Client Testimonials",
-      description: "Showcase positive feedback from past clients to build trust.",
+      description:
+        "Positive feedback from past clients",
       icon: "/images/Lectern.png",
       bgColor: "bg-[#40B1EA]",
       CardBgColor: "bg-white",
@@ -100,7 +102,7 @@ const Choose = () => {
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{
                   duration: 0.8,
-                  delay: index * 0.2, // Stagger animation for each card
+                  delay: index * 0.2,
                 }}
               >
                 {/* Icon Section */}
@@ -115,20 +117,12 @@ const Choose = () => {
                 </div>
                 {/* Title and Description */}
                 <h3
-                  className={`text-lg sm:text-xl font-bold mt-6 mb-4 ${
-                    feature.CardBgColor === "bg-[#131232]"
-                      ? "text-white"
-                      : "text-gray-800"
-                  }`}
+                  className={`text-lg sm:text-xl font-bold mt-6 mb-4 text-gray-800`}
                 >
                   {feature.title}
                 </h3>
                 <p
-                  className={`text-sm sm:text-base leading-relaxed ${
-                    feature.CardBgColor === "bg-[#131232]"
-                      ? "text-white"
-                      : "text-gray-600"
-                  }`}
+                  className={`text-sm sm:text-base leading-relaxed text-gray`}
                 >
                   {feature.description}
                 </p>
