@@ -45,7 +45,7 @@ const Choose = () => {
     {
       title: "Client Testimonials",
       description:
-        "Positive feedback from past clients",
+        "Positive feedback from past clients.",
       icon: "/images/Lectern.png",
       bgColor: "bg-[#40B1EA]",
       CardBgColor: "bg-white",

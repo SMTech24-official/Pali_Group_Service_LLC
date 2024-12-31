@@ -24,7 +24,7 @@ const About = () => {
           <h2 className="text-default font-bold text-[24px] mt-6">
             Christina Pali, IOR
           </h2>
-          <p className="flex items-center gap-2  mb-5">
+          <p className="flex items-center gap-2 mt-1  mb-5">
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
               christina.pali@paligroupservices.org
@@ -56,7 +56,7 @@ const About = () => {
           <h2 className="text-default font-bold text-[24px] mt-6">
             Miceal Moran, Document Control QA/QC
           </h2>
-          <p className="flex items-center gap-2  mb-5">
+          <p className="flex items-center gap-2 mt-1  mb-5">
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
               miceal.moran@paligroupservices.org
