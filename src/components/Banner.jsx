@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <motion.div
-      className="relative overflow-hidden"
+      className="relative overflow-hidden md:pb-[480px] pb-40"
       id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -17,7 +17,7 @@ const Banner = () => {
           alt="Background"
           className="w-full h-full lg:h-[990px]  object-cover"
         />
-        <div className="absolute inset-0"></div>
+        {/* <div className="absolute inset-0"></div> */}
       </div>
 
       {/* Content */}
@@ -56,37 +56,16 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Founded in 2008, Pali Group Services, LLC has established itself
-              as a trusted leader in providing Inspector of Record (IOR)
-              services to both the construction & healthcare sectors. With over
-              16 years of specialized experience, we are committed to ensuring
-              compliance with managing comprehensive project inspections,
-              regulatory requirements, and consistently delivering high-quality
-              outcome for our clients.
+              Pali Group Services, LLC, established in 2008, is a certified
+              Women-Owned Business Enterprise (WBE) specializing in Inspector of
+              Record (IOR) services for the construction and healthcare sectors.
+              With over 16 years of experience, we ensure regulatory compliance
+              and high-quality outcomes across a wide range of projects,
+              including general construction, remodels, and skilled nursing
+              facilities.
             </motion.p>
           </div>
         </motion.div>
-
-        <div className="bg-white shadow-md rounded-lg p-[30px] md:mt-[60px] mt-[25px]">
-          <p className="text-gray mb-3">
-            Our portfolio includes the successful completion of hundreds of
-            projects across diverse industries, showcasing our proficiency in
-            overseeing complex work from inception to completion. In addition to
-            our extensive work in general construction, we have significant
-            expertise in remodels, skilled nursing facilities and rebuild
-            projects, having contributed to several multi-million-dollar
-            rebuilds that demanded precision, strategic foresight, and expert
-            execution.
-          </p>
-          <p className="text-gray">
-            At Pali Group Services, we are driven by a core set of values:
-            integrity, reliability, and an unwavering commitment to excellence.
-            Our collaborative approach involves working closely with project
-            owners, contractors, and architects to ensure that every project
-            complies with HCAi standards and other regulatory requirements,
-            while exceeding client expectations.
-          </p>
-        </div>
       </div>
     </motion.div>
   );

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <Activity />
+      {/* <Activity /> */}
       <Dedicate/>
       <Service />
       <About />

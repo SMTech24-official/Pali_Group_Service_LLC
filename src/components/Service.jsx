@@ -35,9 +35,7 @@ const Service = () => {
         variants={itemVariants}
       >
         <div className="w-full lg:w-[453px] text-center md:text-start">
-          <p className="text-[#131232] border border-gray px-4 py-1 inline-block rounded-[30px] mb-4">
-            Our Services
-          </p>
+          
           <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
             Our Inspection Services Provided By Pali Group Services
           </h2>
