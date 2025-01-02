@@ -26,6 +26,8 @@ const Footer = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <motion.footer
       className="bg-gray-50 py-12 px-6 md:px-12 lg:px-0 mt-[60px] md:mt-[120px] max-w-[1440px] mx-auto"
@@ -125,7 +127,7 @@ const Footer = () => {
           className="text-center mt-10 text-gray"
           variants={itemVariants}
         >
-          © 2024 Pali Group Services, LLC. All rights reserved.
+          © {currentYear} Pali Group Services, LLC. All rights reserved.
         </motion.div>
       </div>
     </motion.footer>
