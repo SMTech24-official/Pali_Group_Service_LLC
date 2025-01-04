@@ -19,12 +19,18 @@ const Dedicate = () => {
           <h1 className="text-[24px] font-semibold text-white mb-3 text-center md:text-start">
             Specialized Firestopping Expertise
           </h1>
+          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-3 text-center md:text-start">
+            Specialized training is required for Third-Party Firestop Special
+            Inspectors. We hold a Premier Certification from the International
+            Firestop Council (IFC), a program that is formally recognized by the
+            HCAI as providing sufficient and suitable firestop knowledge.
+          </p>
           <p className="text-white text-sm md:text-[18px] leading-relaxed mb-8 text-center md:text-start">
-            Christina Pali holds the Premier Certification from the
-            International Firestop Council (IFC), recognized by HCAi. This
-            allows us to integrate firestopping inspections into our IOR
-            services, streamlining the process and ensuring full compliance with
-            California regulations.
+            Pali Group Services offers a one-stop solution for Inspection of
+            Record (IOR) inspections, which includes firestopping special
+            inspections. This integrated service eliminates the need for hiring
+            a separate special inspection company, streamlining your inspection
+            process and ensuring compliance with state regulations.
           </p>
         </div>
 

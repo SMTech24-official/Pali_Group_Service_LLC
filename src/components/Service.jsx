@@ -34,7 +34,7 @@ const Service = () => {
         className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0"
         variants={itemVariants}
       >
-        <div className="w-full lg:w-[453px] text-center md:text-start">
+        {/* <div className="w-full lg:w-[453px] text-center md:text-start">
           
           <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
             Our Inspection Services Provided By Pali Group Services
@@ -67,7 +67,7 @@ const Service = () => {
             a separate special inspection company, streamlining your inspection
             process and ensuring compliance with state regulations.
           </p>
-        </div>
+        </div> */}
       </motion.div>
 
       {/* Services Section */}

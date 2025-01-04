@@ -47,7 +47,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Comprehensive IOR Solutions <br /> for Any Size Project
+              Comprehensive IOR Solutions <br /> for <span className="text-[40px]">Any Size</span> Projects
             </motion.h1>
             <motion.p
               className="text-[#262626] mb-8 mt-4"
