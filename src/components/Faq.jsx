@@ -52,9 +52,9 @@ const Faq = () => {
           <div>
             <h3 className="text-lg font-bold text-default">What is an IOR?</h3>
             <p className="text-gray my-6">
-              An "IOR" in the context of HCAI stands for "Inspector of Record,"
+              An "IOR" in the context of HCAi stands for "Inspector of Record,"
               which refers to a certified inspector specifically approved by the
-              California Department of Health Care Access and Information (HCAI)
+              California Department of Health Care Access and Information (HCAi)
               to continuously monitor and inspect all phases of a hospital
               construction project, ensuring it adheres to the approved plans
               and building codes throughout the process; essentially, they are
@@ -66,7 +66,7 @@ const Faq = () => {
               <ul className="text-gray space-y-6 ml-[60px]">
                 <div>
                   <h3 className="text-default text-[18px] font-bold">
-                    Key points about an IOR HCAI:
+                    Key points about an IOR:
                   </h3>
                 </div>
                 <li className="mb-6">
@@ -74,7 +74,7 @@ const Faq = () => {
                     Certification required:
                   </span>{" "}
                   <br /> To be an IOR, an inspector must pass a specific
-                  certification exam administered by HCAI.
+                  certification exam administered by HCAi.
                 </li>
                 <li className="mb-6">
                   <span className="font-bold text-default">

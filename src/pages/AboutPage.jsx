@@ -116,7 +116,7 @@ export default function AboutPage() {
             <p className="text-gray">
               Miceal Moran brings over 30 years of experience in construction
               and design to the team. A graduate of California Polytechnic State
-              University. San Luis Obispo with a background in architecture and
+              University, San Luis Obispo with a background in architecture and
               drafting, Miceal is a seasoned professional with deep industry
               knowledge. As a Quality Assurance and Control Specialist, he
               ensures that projects are executed efficiently, in full compliance
@@ -124,9 +124,9 @@ export default function AboutPage() {
             </p>
             <p className="text-gray">
               Beyond his professional accomplishments, Miceal is a dedicated
-              father of four, He is passionate about coaching and mentoring
+              father of four. He is passionate about coaching and mentoring
               youth in sports, and enjoys drawing, painting, and creating
-              stylized portrait art. An avid snow skier and musician. Miceal has
+              stylized portrait art. An avid snow skier and musician, Miceal has
               a broad range of personal interests that reflect his commitment to
               both creativity and an active lifestyle.
             </p>

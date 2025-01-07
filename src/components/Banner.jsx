@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <motion.div
-      className="relative overflow-hidden md:pb-[480px] pb-40"
+      className="relative overflow-hidden md:pb-[365px] pb-40"
       id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -13,15 +13,15 @@ const Banner = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/Pali-image.svg"
+          src="/images/update-bg.svg"
           alt="Background"
-          className="w-full h-full lg:h-[990px]  object-cover"
+          className="w-full h-full lg:h-[950px]  object-cover bg-center"
         />
         {/* <div className="absolute inset-0"></div> */}
       </div>
 
       {/* Content */}
-      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-8 py-16 lg:pt-28">
+      <div className="relative max-w-[650px] mx-auto px-6 lg:px-8 py-16 lg:pt-[150px] lg:left-[400px]">
         {/* Left Content */}
         <motion.div
           className="flex flex-col lg:flex-row items-center"
@@ -47,7 +47,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Comprehensive IOR Solutions <br /> for <span className="text-[40px]">Any Size</span> Projects
+             Comprehensive IOR Solutions
             </motion.h1>
             <motion.p
               className="text-[#262626] mb-8 mt-4"

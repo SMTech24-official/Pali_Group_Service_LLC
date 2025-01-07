@@ -90,17 +90,14 @@ const Service = () => {
               Constructability Review
             </h3>
             <p className="text-gray text-sm md:text-base mb-3">
-              Our constructability review ensures that healthcare facility
+               Constructability review ensures that healthcare facility
               construction or renovation adheres to all relevant standards and
               regulations, including the California Building Code (CBC), the
               OSHPD/HCAi-approved Test, Inspection, and Observation (TIO)
               program, and applicable local codes.
             </p>
             <p className="text-gray text-sm md:text-base">
-              Our thorough review process helps ensure project drawing are
-              address and comprehensive all essential, often overlooked
-              requirements, eliminating potential gaps in code compliance or
-              design.
+              Our thorough review process helps ensure project drawings capture all essential, often overlooked requirements, eliminating gaps an eventual delays.
             </p>
           </div>
         </motion.div>
@@ -145,7 +142,7 @@ const Service = () => {
             <p className="text-gray text-sm md:text-base">
               Maintaining thorough records of inspections, testing results,
               deviations from approved plans, and any corrective actions taken,
-              Proper documentation is crucial for compliance with the permitted
+              proper documentation is crucial for compliance with the permitted
               approved OSHPD/HCAi Plans.
             </p>
           </div>

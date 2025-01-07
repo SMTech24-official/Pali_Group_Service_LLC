@@ -79,7 +79,7 @@ const Choose = () => {
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.8 }}
           >
-            Best Factors to Choose Pali Group Services
+            Reasons to Choose Pali Group Services
           </motion.h1>
           <motion.p
             className="text-base sm:text-lg text-gray-600 mb-10 mt-3 text-gray"

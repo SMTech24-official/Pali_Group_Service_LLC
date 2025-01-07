@@ -50,7 +50,7 @@ const Awards = () => {
           <h2 className="text-[18px] sm:text-[20px] font-bold">
           Medical Gas Inspector, NITC 6020
           </h2>
-          <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
+       
         </motion.div>
 
         {/* Award 2 */}
@@ -69,7 +69,7 @@ const Awards = () => {
           <h2 className="text-[18px] sm:text-[20px] font-bold">
           International Firestop Council Premier <br /> Special Inspector Certification
           </h2>
-          <p className="text-[18px] sm:text-[20px] font-bold mt-3">2024</p>
+         
         </motion.div>
 
         {/* Award 3 */}
@@ -88,7 +88,7 @@ const Awards = () => {
           <h2 className="text-[18px] sm:text-[20px] font-bold">
           OSHPD/HCAi Inspector of Record "A" License
           </h2>
-          <p className="text-[18px] sm:text-[20px] font-bold mt-3">2008</p>
+        
         </motion.div>
         {/* Award 4 */}
         <motion.div

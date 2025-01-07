@@ -96,7 +96,7 @@ const Header = () => {
     <>
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "shadow-md bg-[#FFFFFF]" : "bg-[#FFFFFF]"
+          isScrolled ? "shadow-md bg-[#131232]" : "bg-[#131232]"
         }`}
       >
         <nav className="max-w-[1440px] mx-auto py-6 px-5 md:px-0">
@@ -119,7 +119,7 @@ const Header = () => {
             >
               <img
                 className="md:w-[160px] w-auto"
-                src="/images/Logo-header.svg"
+                src="/images/logo-w.svg"
                 alt="Logo"
               />
             </Link>
@@ -139,8 +139,8 @@ const Header = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`${
                     activeSection === item.id
-                      ? "text-default font-bold"
-                      : "text-gray font-semibold hover:text-gray-300"
+                      ? "text-blue-500 font-bold"
+                      : "text-[#FFFFFF] font-semibold hover:text-gray-300"
                   }`}
                 >
                   {item.label}
@@ -153,7 +153,7 @@ const Header = () => {
               <button
                 onClick={toggleDrawer}
                 type="button"
-                className="text-default focus:outline-none"
+                className="text-[#FFFFFF] focus:outline-none"
               >
                 {isDrawerOpen ? "" : <FaBars className="h-6 w-6" />}
               </button>
