@@ -106,7 +106,7 @@ const Blog = () => {
           Managing Timelines and Cost Efficiency
         </h1>
         <img
-          src="/images/blog444.png"
+          src="/images/blog-4444.svg"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         /> 
@@ -135,7 +135,7 @@ const Blog = () => {
           Facilitating HCAi/OSHPD Approval
         </h1>
         <img
-          src="/images/blog555.png"
+          src="/images/blog-l.svg"
           alt="blog image"
           className="w-full max-w-[1170px] mx-auto"
         />
@@ -160,7 +160,7 @@ const Blog = () => {
       </div>
 
       {/* conculsion */}
-      <div className="mt-10 md:mt-20 max-w-[1170px] mx-auto">
+      <div className="mt-10 md:mt-20 max-w-[1170px] mx-auto pb-[60px] md:pb-[120px]">
         <h2 className="text-default font-bold text-[24px] mb-8">Conclusion</h2>
         <p className="mb-4 text-gray">
           In healthcare construction, inspections are not just a formality—they
