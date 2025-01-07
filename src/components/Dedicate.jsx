@@ -9,7 +9,7 @@ const Dedicate = () => {
           <h1 className="text-white text-center md:text-start text-[25px] md:text-[40px] font-bold leading-[40px] md:leading-[48px] mb-8">
             Our Services
           </h1>
-          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-8 text-center md:text-start">
+          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-8 text-justify">
             We provide comprehensive IOR services, including firestopping
             inspections, specialty systems assessments, and regulatory
             compliance evaluations. Our expert team ensures projects meet all
@@ -19,13 +19,13 @@ const Dedicate = () => {
           <h1 className="text-[24px] font-semibold text-white mb-3 text-center md:text-start">
             Specialized Firestopping Expertise
           </h1>
-          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-3 text-center md:text-start">
+          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-3 text-justify">
             Specialized training is required for Third-Party Firestop Special
             Inspectors. We hold a Premier Certification from the International
             Firestop Council (IFC), a program that is formally recognized by the
             HCAI as providing sufficient and suitable firestop knowledge.
           </p>
-          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-8 text-center md:text-start">
+          <p className="text-white text-sm md:text-[18px] leading-relaxed mb-8 text-justify">
             Pali Group Services offers a one-stop solution for Inspection of
             Record (IOR) inspections, which includes firestopping special
             inspections. This integrated service eliminates the need for hiring

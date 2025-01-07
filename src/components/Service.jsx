@@ -89,14 +89,14 @@ const Service = () => {
             <h3 className="text-xl font-bold mb-4 text-default">
               Constructability Review
             </h3>
-            <p className="text-gray text-sm md:text-base mb-3">
+            <p className="text-gray text-sm md:text-base mb-3 text-justify">
                Constructability review ensures that healthcare facility
               construction or renovation adheres to all relevant standards and
               regulations, including the California Building Code (CBC), the
               OSHPD/HCAi-approved Test, Inspection, and Observation (TIO)
               program, and applicable local codes.
             </p>
-            <p className="text-gray text-sm md:text-base">
+            <p className="text-gray text-sm md:text-base text-justify">
               Our thorough review process helps ensure project drawings capture all essential, often overlooked requirements, eliminating gaps an eventual delays.
             </p>
           </div>
@@ -114,7 +114,7 @@ const Service = () => {
           />
           <div>
             <h3 className="text-xl font-bold mb-4">Inspections</h3>
-            <p className="text-gray text-sm md:text-base">
+            <p className="text-gray text-sm md:text-base text-justify">
               In accordance with Chapter 7 of the California Administrative
               Code, we perform all required periodic and ongoing inspections for
               both off-site fabrication and on-site construction activities.
@@ -139,7 +139,7 @@ const Service = () => {
           />
           <div>
             <h3 className="text-xl font-bold mb-4">Documentation</h3>
-            <p className="text-gray text-sm md:text-base">
+            <p className="text-gray text-sm md:text-base text-justify">
               Maintaining thorough records of inspections, testing results,
               deviations from approved plans, and any corrective actions taken,
               proper documentation is crucial for compliance with the permitted

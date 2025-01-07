@@ -1,9 +1,10 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Inspection = () => {
+  const navigate = useNavigate()
   return (
     <div className="max-w-[1440px] mx-auto py-16 md:py-[120px] px-5 md:px-0">
       <motion.div
@@ -24,7 +25,7 @@ const Inspection = () => {
           <h1 className="text-3xl md:text-4xl lg:text-[40px] leading-[48px] font-bold text-default">
           The Role of Inspections in Healthcare Construction: HCAi/OSHPD Compliance
           </h1>
-          <p className="text-gray mt-3 mb-8">
+          <p className="text-gray mt-3 mb-8 text-justify">
             In healthcare construction, ensuring the safety, functionality, and
             compliance of a facility is paramount. Inspections play a crucial
             role in this process, particularly for projects subject to oversight
@@ -32,15 +33,16 @@ const Inspection = () => {
             Information), formerly OSHPD (Office of Statewide Health Planning
             and Development).
           </p>
-          <Link to="/blog">
-            <motion.button
-              className="flex items-center gap-1 border border-default px-4 py-2 rounded-[30px] font-bold"
+          
+            <motion.button 
+              onClick={()=>navigate("/blog")}
+              className="flex items-center gap-1 border border-default px-4 py-2 rounded-[30px] font-bold w-fit"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Read More <FaArrowRightLong />
             </motion.button>
-          </Link>
+         
         </motion.div>
 
         {/* Image */}

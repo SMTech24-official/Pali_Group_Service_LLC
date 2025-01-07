@@ -4,24 +4,31 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <motion.div
-      className="relative overflow-hidden md:pb-[365px] pb-40"
+      className="relative overflow-hidden md:pb-[365px] bg-cover bg-center bg-no-repeat pt-5"
       id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
+      style={{
+        backgroundImage: "url('/images/bb.svg')",
+        backgroundRepeat: "no-repeat",
+      }}
     >
+
+<div className="absolute inset-0 bg-black/50 "></div>
+
       {/* Background Image */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <img
           src="/images/update-bg.svg"
           alt="Background"
-          className="w-full h-full lg:h-[950px]  object-cover bg-center"
+          className="w-full h-auto lg:h-[950px]  object-cover pb-40"
         />
-        {/* <div className="absolute inset-0"></div> */}
-      </div>
+       
+      </div> */}
 
       {/* Content */}
-      <div className="relative max-w-[650px] mx-auto px-6 lg:px-8 py-16 lg:pt-[150px] lg:left-[400px]">
+      <div className="relative max-w-[850px] mx-auto px-6 lg:px-8 py-16 lg:pt-[150px] ">
         {/* Left Content */}
         <motion.div
           className="flex flex-col lg:flex-row items-center"
@@ -41,16 +48,16 @@ const Banner = () => {
               Your One-Stop Shop for Inspection & Reporting Services
             </motion.div>
             <motion.h1
-              className="text-[28px] lg:text-[56px] font-bold text-default leading-[28px] lg:leading-[62px] mb-4"
+              className="text-[28px] lg:text-[56px] font-bold  text-[#FFFFFF] leading-[28px] lg:leading-[62px] mb-4"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-             Comprehensive IOR Solutions
+              Comprehensive IOR Solutions
             </motion.h1>
             <motion.p
-              className="text-[#262626] mb-8 mt-4"
+              className=" mb-8 mt-4 text-justify text-[#F7F9F2]"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: false, amount: 0.2 }}
