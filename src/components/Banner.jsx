@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <motion.div
-      className="relative overflow-hidden md:pb-[365px] bg-cover bg-center bg-no-repeat pt-5"
+      className="relative overflow-hidden md:pb-[365px] bg-cover bg-center bg-no-repeat"
       id="home"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -28,7 +28,7 @@ const Banner = () => {
       </div> */}
 
       {/* Content */}
-      <div className="relative max-w-[850px] mx-auto px-6 lg:px-8 py-16 lg:pt-[150px] ">
+      <div className="relative max-w-[850px] mx-auto px-6 pt-[120px] lg:px-8 py-16 lg:pt-[150px] ">
         {/* Left Content */}
         <motion.div
           className="flex flex-col lg:flex-row items-center"
