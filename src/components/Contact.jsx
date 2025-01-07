@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import { FaLocationDot } from "react-icons/fa6";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { useSubmitContactFormMutation } from "../features/contactApi";
-import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const [
@@ -43,20 +44,32 @@ const Contact = () => {
       message: formData.message,
     };
 
-    console.log("Payload sent to backend:", payload);
-
     try {
       await submitContactForm(payload).unwrap();
-      console.log("Form submitted successfully!");
+      toast.success("Message submitted successfully!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
       setFormData({
         fullName: "",
         phone: "",
         email: "",
         subject: "",
         message: "",
-      })
+      });
     } catch (err) {
-      console.error("Error submitting form:", err);
+      toast.error("Failed to submit the message!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
     }
   };
 
@@ -87,6 +100,9 @@ const Contact = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
+      {/* Toastify Container */}
+      <ToastContainer />
+
       {/* Header Section */}
       <motion.div
         className="flex flex-col justify-center items-center text-center pb-10"
@@ -99,7 +115,8 @@ const Contact = () => {
           Let’s Build a Better <br /> Healthcare Future
         </h2>
         <p className="text-[#666782] text-[16px] md:text-[18px] mt-4">
-        Contact Pali Group Services to secure an IOR <br /> or firestopping inspector for your project.
+          Contact Pali Group Services to secure an IOR <br /> or firestopping
+          inspector for your project.
         </p>
       </motion.div>
 
@@ -114,7 +131,8 @@ const Contact = () => {
           variants={itemVariants}
         >
           <h2 className="text-center text-[24px] font-bold mb-6 leading-[28px] text-default">
-          Send a request for more information on how we can help with your project!
+            Send a request for more information on how we can help with your
+            project!
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
@@ -171,10 +189,6 @@ const Contact = () => {
               </button>
             </div>
           </form>
-          {isSuccess && <p className="text-center mt-2 text-green-500">Data submitted successfully!</p>}
-          {isError && (
-            <p className="text-red-500 text-center mt-2">Error: {apiError?.data?.message || "Something went wrong!"}</p>
-          )}
         </motion.div>
 
         {/* Contact Information Section */}
@@ -184,11 +198,12 @@ const Contact = () => {
         >
           <div>
             <h3 className="text-[24px] font-bold mb-4 text-center lg:text-left">
-            Contact Us:
+              Contact Us:
             </h3>
             <ul className="space-y-4">
               <li className="flex items-center justify-center lg:justify-start">
-                <FaLocationDot  className="text-default mr-2 text-[22px]" /> 505 Montgomery Street San Francisco, CA 94111
+                <FaLocationDot className="text-default mr-2 text-[22px]" /> 505
+                Montgomery Street San Francisco, CA 94111
               </li>
               <li className="flex items-center justify-center lg:justify-start">
                 <FaPhoneAlt className="text-default mr-2" /> +1 415-297-3432
@@ -205,7 +220,6 @@ const Contact = () => {
                 <FaEnvelope className="text-default mr-2" />{" "}
                 support@paligroupservices.org
               </li>
-              
             </ul>
           </div>
         </motion.div>
