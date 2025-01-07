@@ -94,7 +94,7 @@ export default function AboutPage() {
       </div>
 
       {/* Quality Assurance Section */}
-      <div className="grid md:grid-cols-2  items-start">
+      <div className="grid md:grid-cols-2  items-start pb-[60px] md:pb-[120px]">
         <div className="">
           <img
             src="/images/pageabout.png"
