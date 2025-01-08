@@ -85,7 +85,7 @@ const Blog = () => {
               {/* Blog Image */}
               <img
                 src={blog.image}
-                alt={blog.title}
+                alt="Hospital construction in San Francisco Bay Area"
                 className="md:w-[350px] md:h-[350px] w-full object-cover"
               />
               {/* Blog Content */}

@@ -13,7 +13,7 @@ const Blog = () => {
         </h1>
         <img
           src="/images/blog111.png"
-          alt="blog image"
+          alt="OSHPD HCAi construction and inspections"
           className="w-full max-w-[1170px] mx-auto"
         />
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
@@ -44,7 +44,7 @@ const Blog = () => {
         </h1>
         <img
           src="/images/blog222.png"
-          alt="blog image"
+          alt="OSHPD HCAi construction and inspections"
           className="w-full max-w-[1170px] mx-auto"
         />
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
@@ -76,7 +76,7 @@ const Blog = () => {
         </h1>
         <img
           src="/images/blog333.png"
-          alt="blog image"
+          alt="OSHPD HCAi construction and inspections"
           className="w-full max-w-[1170px] mx-auto"
         />
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
@@ -107,7 +107,7 @@ const Blog = () => {
         </h1>
         <img
           src="/images/blog-4444.svg"
-          alt="blog image"
+          alt="OSHPD HCAi construction and inspections"
           className="w-full max-w-[1170px] mx-auto"
         /> 
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
@@ -136,7 +136,7 @@ const Blog = () => {
         </h1>
         <img
           src="/images/blog-l.svg"
-          alt="blog image"
+          alt="OSHPD HCAi construction and inspections"
           className="w-full max-w-[1170px] mx-auto"
         />
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">

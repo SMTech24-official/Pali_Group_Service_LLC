@@ -120,7 +120,7 @@ const Header = () => {
               <img
                 className="md:w-[160px] w-auto"
                 src="/images/logo-w.svg"
-                alt="Logo"
+                alt="Hospital construction in San Francisco Bay Area"
               />
             </Link>
 
@@ -172,7 +172,7 @@ const Header = () => {
               <img
                 className="w-[180px]"
                 src="/images/logo-mobile.svg"
-                alt="Logo"
+                alt="OSHPD HCAi construction and inspections"
               />
               <button onClick={toggleDrawer} className="mr-4">
                 <FaTimes className="h-6 w-6" />

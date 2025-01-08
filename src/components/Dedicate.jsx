@@ -38,7 +38,7 @@ const Dedicate = () => {
         <div className="md:w-[522px] w-full mb-8 md:mb-0">
           <img
             src="/images/aboutpic.png"
-            alt="Inspection Process"
+            alt="OSHPD HCAi construction and inspections"
             className="rounded-[20px] w-full h-auto object-cover"
           />
         </div>

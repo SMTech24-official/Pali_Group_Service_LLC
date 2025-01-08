@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="order-first md:order-last">
           <img
             src="/images/aboutpic.png"
-            alt="Professional in construction site"
+            alt="OSHPD HCAi construction and inspections"
             className="rounded-lg shadow-lg w-full h-auto object-cover"
           />
         </div>
@@ -46,7 +46,7 @@ export default function AboutPage() {
         <div>
           <img
             src="/images/pageabout2.png"
-            alt="Founder"
+            alt="OSHPD HCAi construction and inspections"
             className="md:w-[80%] w-full"
           />
         </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
         <div className="">
           <img
             src="/images/pageabout.png"
-            alt="Quality Assurance Specialist"
+            alt="OSHPD HCAi construction and inspections"
             className="md:w-[80%] w-full"
           />
         </div>

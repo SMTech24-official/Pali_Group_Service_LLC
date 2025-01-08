@@ -111,7 +111,7 @@ const Choose = () => {
                 >
                   <img
                     src={feature.icon}
-                    alt={feature.title}
+                    alt="Hospital construction in San Francisco Bay Area"
                     className="w-[28px] h-[28px]"
                   />
                 </div>

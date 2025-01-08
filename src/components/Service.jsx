@@ -82,7 +82,7 @@ const Service = () => {
         >
           <img
             src="images/service1.png"
-            alt="Constructability Review"
+            alt="OSHPD HCAi construction and inspections"
             className="w-full h-48 object-cover rounded-[10px] mb-8"
           />
           <div>
@@ -109,7 +109,7 @@ const Service = () => {
         >
           <img
             src="/images/service2.png"
-            alt="Site Inspections"
+            alt="OSHPD HCAi construction and inspections"
             className="w-full h-48 object-cover rounded-[10px] mb-8"
           />
           <div>
@@ -134,7 +134,7 @@ const Service = () => {
         >
           <img
             src="images/service3.png"
-            alt="Documentation"
+            alt="OSHPD HCAi construction and inspections"
             className="w-full h-48 object-cover rounded-[10px] mb-8"
           />
           <div>

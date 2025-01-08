@@ -7,7 +7,7 @@ import Faq from "../components/Faq";
 import Inspection from "../components/Inspection";
 import Contact from "../components/Contact";
 import About from "../components/About";
-import Activity from "../components/Activity";
+// import Activity from "../components/Activity";
 import Dedicate from "../components/Dedicate";
 
 const Home = () => {

@@ -52,7 +52,7 @@ const Inspection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <img src="/images/inspection.png" alt="inspection image" />
+          <img src="/images/inspection.png" alt="OSHPD HCAi construction and inspections" />
         </motion.div>
       </motion.div>
     </div>

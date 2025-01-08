@@ -9,7 +9,7 @@ const Activity = () => {
           <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center overflow-hidden">
             <img
               src="/images/activity.png"
-              alt="Activity Illustration"
+              alt="Hospital construction in San Francisco Bay Area"
               className="object-contain"
             />
           </div>

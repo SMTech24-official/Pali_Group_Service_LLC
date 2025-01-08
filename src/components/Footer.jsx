@@ -52,7 +52,7 @@ const Footer = () => {
             >
               <img
                 src="/images/logo-w.svg"
-                alt="Pali Group Services"
+                alt="Hospital construction in San Francisco Bay Area"
                 className="w-[160px] mb-4"
               />
               <p className="text-[#FFFFFF] text-lg leading-relaxed">

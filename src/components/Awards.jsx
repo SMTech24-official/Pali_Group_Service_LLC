@@ -44,7 +44,7 @@ const Awards = () => {
         >
           <img
             src="/images/a1.svg"
-            alt="Award 2"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
@@ -63,7 +63,7 @@ const Awards = () => {
         >
           <img
             src="/images/award3.png"
-            alt="Award 3"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
@@ -82,7 +82,7 @@ const Awards = () => {
         >
           <img
             src="/images/award-33.svg"
-            alt="Award 1"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
@@ -100,7 +100,7 @@ const Awards = () => {
         >
           <img
             src="/images/award-4.svg"
-            alt="Award 1"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
@@ -117,7 +117,7 @@ const Awards = () => {
         >
           <img
             src="/images/award-5.svg"
-            alt="Award 1"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">
@@ -135,7 +135,7 @@ const Awards = () => {
         >
           <img
             src="/images/award-6.svg"
-            alt="Award 1"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold ">
@@ -153,7 +153,7 @@ const Awards = () => {
         >
           <img
             src="/images/award-7.svg"
-            alt="Award 1"
+            alt="Hospital construction in San Francisco Bay Area"
             className="mx-auto mb-4"
           />
           <h2 className="text-[18px] sm:text-[20px] font-bold">NFPA</h2>

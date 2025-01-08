@@ -18,7 +18,7 @@ const About = () => {
             <img
               className="w-[100px] h-[100px] object-cover rounded-full"
               src="/images/aboutimage2.png"
-              alt="Christina Pali"
+              alt="Hospital construction in San Francisco Bay Area"
             />
           </div>
           <h2 className="text-default font-bold text-[24px] mt-6">
@@ -38,7 +38,7 @@ const About = () => {
             </span>
           </p>
           <p className="text-gray leading-relaxed">
-            Christina Pali brings over 30 years of experience in construction
+            Christina Pali brings over 25 years of experience in construction
             management to her role as founder of Pali Group Services,
             established in 2008. She holds a Bachelor of Science with an
             emphasis in Biogeochemistry from the California University...
@@ -57,7 +57,7 @@ const About = () => {
             <img
               className="w-[100px] h-[100px] object-cover rounded-full"
               src="/images/aboutimage1.png"
-              alt="Miceal Moran"
+              alt="Hospital construction in San Francisco Bay Area"
             />
           </div>
           <h2 className="text-default font-bold text-[24px] mt-6">
@@ -77,7 +77,7 @@ const About = () => {
             </span>
           </p>
           <p className="text-gray leading-relaxed">
-            Miceal Moran brings over 30 years of experience in construction and
+            Miceal Moran brings decades of experience in construction and
             design to the team. A graduate of California Polytechnic State
             University, San Luis Obispo with a background in architecture and
             drafting, Miceal is a season professional with deep industry...
