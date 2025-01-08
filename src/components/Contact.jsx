@@ -209,16 +209,37 @@ const Contact = () => {
                 <FaPhoneAlt className="text-default mr-2" /> +1 415-297-3432
               </li>
               <li className="flex items-center justify-center lg:justify-start">
-                <FaEnvelope className="text-default mr-2" />{" "}
-                admin@paligroupservices.org
+                <FaEnvelope className="text-default mr-2" />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@paligroupservices.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  admin@paligroupservices.org
+                </a>
               </li>
               <li className="flex items-center justify-center lg:justify-start">
-                <FaEnvelope className="text-default mr-2" />{" "}
-                firestopping@paligroupservices.org
+                <FaEnvelope className="text-default mr-2" />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=firestopping@paligroupservices.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  firestopping@paligroupservices.org
+                </a>
               </li>
               <li className="flex items-center justify-center lg:justify-start">
-                <FaEnvelope className="text-default mr-2" />{" "}
-                support@paligroupservices.org
+                <FaEnvelope className="text-default mr-2" />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=support@paligroupservices.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  support@paligroupservices.org
+                </a>
               </li>
             </ul>
           </div>

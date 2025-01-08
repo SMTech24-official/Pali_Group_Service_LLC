@@ -14,8 +14,7 @@ const Banner = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-
-<div className="absolute inset-0 bg-black/50 "></div>
+      <div className="absolute inset-0 bg-black/50 "></div>
 
       {/* Background Image */}
       {/* <div className="absolute inset-0">
@@ -63,13 +62,15 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              Pali Group Services, LLC, established in 2008, is a certified
+              Pali Group Services LLC, established in 2008, is a certified
               Women-Owned Business Enterprise (WBE) specializing in Inspector of
-              Record (IOR) services for the construction and healthcare sectors.
-              With over 16 years of experience, we ensure regulatory compliance
-              and high-quality outcomes across a wide range of projects,
-              including general construction, remodels, and skilled nursing
-              facilities.
+              Record (IOR) services for the construction and healthcare sectors
+              regulated by the Department of Healthcare Access and Information
+              (HCAi). Leveraging decades of experience in regulatory oversight
+              and project delivery, we provide expert support across a wide
+              array of projects, including general construction, remodels, and
+              skilled nursing facilities, ensuring high-quality outcomes and
+              full adherence to industry standards.
             </motion.p>
           </div>
         </motion.div>

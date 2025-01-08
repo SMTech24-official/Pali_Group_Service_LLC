@@ -97,7 +97,7 @@ const Service = () => {
               program, and applicable local codes.
             </p>
             <p className="text-gray text-sm md:text-base text-justify">
-              Our thorough review process helps ensure project drawings capture all essential, often overlooked requirements, eliminating gaps an eventual delays.
+              Our thorough review process helps ensure project drawings capture all essential, often overlooked requirements, eliminating gaps and eventual delays.
             </p>
           </div>
         </motion.div>

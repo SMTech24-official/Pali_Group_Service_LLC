@@ -27,7 +27,14 @@ const About = () => {
           <p className="flex items-center gap-2 mt-1  mb-5">
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
-              christina.pali@paligroupservices.org
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=christina.pali@paligroupservices.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                christina.pali@paligroupservices.org
+              </a>
             </span>
           </p>
           <p className="text-gray leading-relaxed">
@@ -59,7 +66,14 @@ const About = () => {
           <p className="flex items-center gap-2 mt-1  mb-5">
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
-              miceal.moran@paligroupservices.org
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=miceal.moran@paligroupservices.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                miceal.moran@paligroupservices.org
+              </a>
             </span>
           </p>
           <p className="text-gray leading-relaxed">

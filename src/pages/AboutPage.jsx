@@ -57,12 +57,19 @@ export default function AboutPage() {
           <p className="flex items-center gap-2 mt-1  mb-6">
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
-              christina.pali@paligroupservices.org
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=christina.pali@paligroupservices.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                christina.pali@paligroupservices.org
+              </a>
             </span>
           </p>
           <div className="space-y-6 text-gray">
             <p className="text-gray">
-              Christina Pali brings over 30 years of experience in construction
+              Christina Pali brings over 25 years of experience in construction
               management to her role as founder of Pali Group Services,
               established in 2008. She holds a Bachelor of Science with an
               emphasis in Biogeochemistry from the University of California,
@@ -109,13 +116,20 @@ export default function AboutPage() {
           <p className="flex items-center gap-2 mt-1  mb-6">
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
-              miceal.moran@paligroupservices.org
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=miceal.moran@paligroupservices.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                miceal.moran@paligroupservices.org
+              </a>
             </span>
           </p>
           <div className="space-y-6 text-gray">
             <p className="text-gray">
-              Miceal Moran brings over 30 years of experience in construction
-              and design to the team. A graduate of California Polytechnic State
+              Miceal Moran brings decades of experience in construction and
+              design to the team. A graduate of California Polytechnic State
               University, San Luis Obispo with a background in architecture and
               drafting, Miceal is a seasoned professional with deep industry
               knowledge. As a Quality Assurance and Control Specialist, he

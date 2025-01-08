@@ -6,7 +6,7 @@ const Choose = () => {
     {
       title: "Expertise",
       description:
-        "30 Years of industry experience & a team of qualified professionals.",
+        "25 Years of industry experience & a team of qualified professionals.",
       icon: "/images/Chalkboard.svg",
       bgColor: "bg-[#131232]",
       CardBgColor: "bg-white",
@@ -88,7 +88,7 @@ const Choose = () => {
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            With Pali Group Service, your project is in expert hands.
+            With Pali Group Services, your project is in expert hands.
           </motion.p>
 
           {/* Features Grid */}

@@ -23,7 +23,7 @@ const Dedicate = () => {
             Specialized training is required for Third-Party Firestop Special
             Inspectors. We hold a Premier Certification from the International
             Firestop Council (IFC), a program that is formally recognized by the
-            HCAI as providing sufficient and suitable firestop knowledge.
+            HCAi as providing sufficient and suitable firestop knowledge.
           </p>
           <p className="text-white text-sm md:text-[18px] leading-relaxed mb-8 text-justify">
             Pali Group Services offers a one-stop solution for Inspection of
