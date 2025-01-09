@@ -90,14 +90,16 @@ const Service = () => {
               Constructability Review
             </h3>
             <p className="text-gray text-sm md:text-base mb-3 text-justify">
-               Constructability review ensures that healthcare facility
+              Constructability review ensures that healthcare facility
               construction or renovation adheres to all relevant standards and
               regulations, including the California Building Code (CBC), the
               OSHPD/HCAi-approved Test, Inspection, and Observation (TIO)
               program, and applicable local codes.
             </p>
             <p className="text-gray text-sm md:text-base text-justify">
-              Our thorough review process helps ensure project drawings capture all essential, often overlooked requirements, eliminating gaps and eventual delays.
+              Our thorough review process helps ensure project drawings capture
+              all essential, often overlooked requirements, eliminating gaps and
+              eventual delays.
             </p>
           </div>
         </motion.div>
@@ -140,10 +142,12 @@ const Service = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Documentation</h3>
             <p className="text-gray text-sm md:text-base text-justify">
-              Maintaining thorough records of inspections, testing results,
-              deviations from approved plans, and any corrective actions taken,
-              proper documentation is crucial for compliance with the permitted
-              approved OSHPD/HCAi Plans.
+              We are recognized for our commitment to maintaining comprehensive
+              records of inspections, testing results, deviations from approved
+              plans, and any corrective actions taken. Thorough documentation is
+              essential for ensuring compliance with approved OSHPD/HCAi plans.
+              To guarantee accuracy, our team employs a robust system of checks
+              and balances to ensure proper documentation at every step.
             </p>
           </div>
         </motion.div>
