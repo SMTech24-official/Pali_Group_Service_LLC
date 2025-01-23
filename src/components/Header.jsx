@@ -99,7 +99,7 @@ const Header = () => {
           isScrolled ? "shadow-md bg-[#131232]" : "bg-[#131232]"
         }`}
       >
-        <nav className="max-w-[1440px] mx-auto py-6 px-5 md:px-0">
+        <nav className="max-w-[1440px] mx-auto py-6 px-5 md:px-5 lg:px-5">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link

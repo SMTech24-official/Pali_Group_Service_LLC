@@ -3,7 +3,7 @@ import React from "react";
 const Dedicate = () => {
   return (
     <div className="bg-primary mb-[60px] md:mb-[120px]">
-      <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center md:justify-between py-10 px-5 md:px-0 md:py-20  w-full">
+      <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center md:justify-between py-10 px-5 md:px-0 md:py-20  w-full">
         {/* Text Section */}
         <div className="md:w-1/2 w-full md:text-left">
           <h1 className="text-white text-center md:text-start text-[25px] md:text-[40px] font-bold leading-[40px] md:leading-[48px] mb-8">

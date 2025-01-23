@@ -11,7 +11,7 @@ const About = () => {
       <h2 className="text-center text-[32px] font-bold text-gray-800 mb-10">
         About Us
       </h2>
-      <div className="flex gap-8 md:flex-row flex-col">
+      <div className="flex gap-8 lg:flex-row flex-col justify-center items-center">
         {/* Card 1 */}
         <div className="border border-[#ADADAD] rounded-[20px] md:w-[570px] w-full p-10">
           <div className="flex items-center gap-6">

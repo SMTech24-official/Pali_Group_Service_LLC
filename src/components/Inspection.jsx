@@ -8,7 +8,7 @@ const Inspection = () => {
   return (
     <div className="max-w-[1440px] mx-auto py-16 md:py-[120px] px-5 md:px-0">
       <motion.div
-        className="flex flex-col-reverse md:flex-row gap-5 items-center justify-between max-w-[1170px] mx-auto"
+        className="flex flex-col-reverse lg:flex-row gap-5 items-center justify-between max-w-[1170px] mx-auto"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

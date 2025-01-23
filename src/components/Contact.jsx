@@ -201,14 +201,14 @@ const Contact = () => {
               Contact Us:
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-center justify-center lg:justify-start">
+              <li className="flex items-center justify-start lg:justify-start">
                 <FaLocationDot className="text-default mr-2 text-[22px]" /> 505
                 Montgomery Street San Francisco, CA 94111
               </li>
-              <li className="flex items-center justify-center lg:justify-start">
+              <li className="flex items-center justify-start lg:justify-start">
                 <FaPhoneAlt className="text-default mr-2" /> +1 415-297-3432
               </li>
-              <li className="flex items-center justify-center lg:justify-start">
+              <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@paligroupservices.org"
@@ -219,7 +219,7 @@ const Contact = () => {
                   admin@paligroupservices.org
                 </a>
               </li>
-              <li className="flex items-center justify-center lg:justify-start">
+              <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=firestopping@paligroupservices.org"
@@ -230,7 +230,7 @@ const Contact = () => {
                   firestopping@paligroupservices.org
                 </a>
               </li>
-              <li className="flex items-center justify-center lg:justify-start">
+              <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=support@paligroupservices.org"
