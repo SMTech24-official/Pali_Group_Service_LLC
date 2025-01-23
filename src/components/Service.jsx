@@ -34,40 +34,7 @@ const Service = () => {
         className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0"
         variants={itemVariants}
       >
-        {/* <div className="w-full lg:w-[453px] text-center md:text-start">
-          
-          <h2 className="text-3xl leading-[30px] md:text-[40px] font-bold mb-2 md:mb-4 md:leading-[48px] text-center lg:text-left">
-            Our Inspection Services Provided By Pali Group Services
-          </h2>
-          <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
-            We provide inspector of Record (IOR) service for any size projects
-            under the jurisdiction of OSHPD/HCAi. Our scope of services includes
-            ensuring that a construction project compiles with the approved
-            construction drawings, relevant codes, regulations and safety
-            standards specific to healthcare facilities.
-          </p>
-        </div>
-        <div className="md:w-[555px] w-full">
-          <h2 className="md:text-[24px] text-[20px] leading-[24px]  font-semibold text-[#000000] mb-3 text-center lg:text-left">
-            Pali Group Services: Comprehensive IOR Inspections with Firestop
-            Expertise
-          </h2>
-          <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left mb-3">
-            In California, specialized training is required for Local/Regional
-            Third-Party Firestop Special Inspectors. Christina Pali holds the
-            prestigious Premier Certification from the International Firestop
-            Council (IFC), a program that is formally recognized by the HCAI
-            (Health Care Access and Information, formerly OSHPD) as providing
-            sufficient and suitable firestop knowledge.
-          </p>
-          <p className="text-gray text-sm md:text-[18px] leading-[28px] w-full lg:w-[573px] text-center lg:text-left">
-            Pali Group Services offers a one-stop solution for Inspection of
-            Record (IOR) inspections, which includes firestopping special
-            inspections. This integrated service eliminates the need for hiring
-            a separate special inspection company, streamlining your inspection
-            process and ensuring compliance with state regulations.
-          </p>
-        </div> */}
+        
       </motion.div>
 
       {/* Services Section */}
