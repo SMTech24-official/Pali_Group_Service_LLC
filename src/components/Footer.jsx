@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaTwitter,
-  FaFacebookF,
-} from "react-icons/fa";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 
@@ -23,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary md:px-5">
       <motion.footer
         className=" py-12 px-6 md:px-12 lg:px-0 pt-[60px] md:pt-[120px] max-w-[1440px] mx-auto"
         initial="hidden"
@@ -44,7 +39,7 @@ const Footer = () => {
           >
             {/* Left Section - Logo and Description */}
             <motion.div
-              className="flex flex-col items-start text-left md:border-r-2 border-[#E6E8EC] pr-[64px]"
+              className="flex flex-col items-start text-left lg:border-r-2 border-[#E6E8EC] pr-[64px]"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -63,7 +58,7 @@ const Footer = () => {
 
             {/* Center Section - Navigation Links */}
             <motion.div
-              className="flex flex-col md:border-r-2 border-[#E6E8EC]"
+              className="flex flex-col lg:border-r-2 border-[#E6E8EC]"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -132,7 +127,7 @@ const Footer = () => {
               <p className="text-[#FFFFFF] font-medium mb-8 text-start">
                 Follow us on
               </p>
-              <div className="flex space-x-4 pb-7 md:pb-0">
+              <div className="flex space-x-4 pb-7 lg:pb-0">
                 <a
                   href="https://www.facebook.com/people/Pali-Group-Services-LLC/61571270249881/?mibextid=wwXIfr"
                   target="_blank"

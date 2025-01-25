@@ -80,7 +80,7 @@ const About = () => {
             Miceal Moran brings decades of experience in construction and
             design to the team. A graduate of California Polytechnic State
             University, San Luis Obispo with a background in architecture and
-            drafting, Miceal is a season professional with deep industry...
+            drafting, Miceal is a seasoned professional with deep industry...
             <Link
               to="/aboutUs"
               className="text-blue-600 font-bold underline ml-1"
