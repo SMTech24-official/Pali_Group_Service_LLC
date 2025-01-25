@@ -58,7 +58,7 @@ export default function AboutPage() {
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=christina.pali@paligroupservices.org"
+                href="mailto:christina.pali@paligroupservices.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -117,7 +117,7 @@ export default function AboutPage() {
             <MdOutlineEmail className="text-gray" />{" "}
             <span className="text-base text-[#262626]">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=miceal.moran@paligroupservices.org"
+                href="mailto:miceal.moran@paligroupservices.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
