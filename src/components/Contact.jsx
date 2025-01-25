@@ -47,21 +47,14 @@ const Contact = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(payload),
-      credentials: "include", // Add this line for credentials
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log(data);
       })
       .catch((error) => {
         console.error("Error:", error);
       });
-    
 
     // try {
     //   const res = await submitContactForm(payload).unwrap();
