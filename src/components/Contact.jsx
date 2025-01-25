@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "emailjs-com"; 
 
 import { useSubmitContactFormMutation } from "../features/contactApi";
 
@@ -29,43 +28,49 @@ const Contact = () => {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_p06h7xq",
-        "template_z3lhbbq",
-       {
-        ...formData,
-        receiver_email: "christina.pali@paligroupservices.org", 
-       },
-        "zUor9vXyTKf2w3XTg"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Message sent successfully!", {
-            position: "top-center",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error("Failed to send message. Please try again.", {
-            position: "top-center", 
-          });
+    // Split fullName into firstName and lastName
+    const [firstName, ...lastNameParts] = formData.fullName.split(" ");
+    const lastName = lastNameParts.join(" ");
 
+    const payload = {
+      subject: formData.subject,
+      firstName: firstName || "",
+      lastName: lastName || "",
+      email: formData.email,
+      phoneNumber: formData.phone,
+      message: formData.message,
+    };
 
-        }
-      );
-
-    setFormData({
-      fullName: "",
-      phone: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    try {
+      await submitContactForm(payload).unwrap();
+      toast.success("Message submitted successfully!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      setFormData({
+        fullName: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (err) {
+      toast.error("Failed to submit the message!", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
   };
 
   // Animation Variants
@@ -206,7 +211,7 @@ const Contact = () => {
               <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
-                  href="mailto: admin@paligroupservices.org"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@paligroupservices.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -217,7 +222,7 @@ const Contact = () => {
               <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
-                  href="mailto:firestopping@paligroupservices.org"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=firestopping@paligroupservices.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -228,7 +233,7 @@ const Contact = () => {
               <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
-                  href="mailto: support@paligroupservices.org"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=support@paligroupservices.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
