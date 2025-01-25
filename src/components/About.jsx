@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -77,10 +76,10 @@ const About = () => {
             </span>
           </p>
           <p className="text-gray leading-relaxed">
-            Miceal Moran brings decades of experience in construction and
-            design to the team. A graduate of California Polytechnic State
-            University, San Luis Obispo with a background in architecture and
-            drafting, Miceal is a seasoned professional with deep industry...
+            Miceal Moran brings decades of experience in construction and design
+            to the team. A graduate of California Polytechnic State University,
+            San Luis Obispo with a background in architecture and drafting,
+            Miceal is a seasoned professional with deep industry...
             <Link
               to="/aboutUs"
               className="text-blue-600 font-bold underline ml-1"

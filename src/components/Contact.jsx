@@ -1,19 +1,14 @@
-import React, { useState } from "react";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { useSubmitContactFormMutation } from "../features/contactApi";
-
 const Contact = () => {
-  const [
-    submitContactForm,
-    { isLoading, isSuccess, isError, error: apiError },
-  ] = useSubmitContactFormMutation();
+  // const [submitContactForm, { isLoading }] = useSubmitContactFormMutation();
 
-  const [formData, setFormData] = useState({
+  const [mailData, setMailData] = useState({
     fullName: "",
     phone: "",
     email: "",
@@ -24,7 +19,7 @@ const Contact = () => {
   // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setMailData({ ...mailData, [name]: value });
   };
 
   // Handle form submission
@@ -32,45 +27,63 @@ const Contact = () => {
     e.preventDefault();
 
     // Split fullName into firstName and lastName
-    const [firstName, ...lastNameParts] = formData.fullName.split(" ");
+    const [firstName, ...lastNameParts] = mailData.fullName.split(" ");
     const lastName = lastNameParts.join(" ");
 
     const payload = {
-      subject: formData.subject,
+      subject: mailData.subject,
       firstName: firstName || "",
       lastName: lastName || "",
-      email: formData.email,
-      phoneNumber: formData.phone,
-      message: formData.message,
+      email: mailData.email,
+      phoneNumber: mailData.phone,
+      message: mailData.message,
     };
 
-    try {
-      await submitContactForm(payload).unwrap();
-      toast.success("Message submitted successfully!", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
+    console.log({ payload });
+
+    fetch("https://api.paligroupservices.org/api/v1/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
       });
-      setFormData({
-        fullName: "",
-        phone: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    } catch (err) {
-      toast.error("Failed to submit the message!", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-      });
-    }
+
+    // try {
+    //   const res = await submitContactForm(payload).unwrap();
+    //   console.log({ res });
+    //   toast.success("Message submitted successfully!", {
+    //     position: "top-center",
+    //     autoClose: 3000,
+    //     hideProgressBar: true,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //   });
+    //   setMailData({
+    //     fullName: "",
+    //     phone: "",
+    //     email: "",
+    //     subject: "",
+    //     message: "",
+    //   });
+    // } catch (err) {
+    //   toast.error("Failed to submit the message!", {
+    //     position: "top-center",
+    //     autoClose: 3000,
+    //     hideProgressBar: true,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //   });
+    // }
   };
 
   // Animation Variants
@@ -140,7 +153,7 @@ const Contact = () => {
               placeholder="Full Name"
               className="w-full px-4 py-2 border border-gray rounded-md"
               name="fullName"
-              value={formData.fullName}
+              value={mailData.fullName}
               onChange={handleChange}
               required
             />
@@ -149,7 +162,7 @@ const Contact = () => {
               placeholder="Phone"
               className="w-full px-4 py-2 border border-gray rounded-md"
               name="phone"
-              value={formData.phone}
+              value={mailData.phone}
               onChange={handleChange}
               required
             />
@@ -158,7 +171,7 @@ const Contact = () => {
               placeholder="Email"
               className="w-full px-4 py-2 border border-gray rounded-md"
               name="email"
-              value={formData.email}
+              value={mailData.email}
               onChange={handleChange}
               required
             />
@@ -167,7 +180,7 @@ const Contact = () => {
               placeholder="Subject"
               className="w-full px-4 py-2 border border-gray rounded-md"
               name="subject"
-              value={formData.subject}
+              value={mailData.subject}
               onChange={handleChange}
               required
             />
@@ -176,16 +189,16 @@ const Contact = () => {
               rows="5"
               className="w-full px-4 py-2 border border-gray-300 rounded-md"
               name="message"
-              value={formData.message}
+              value={mailData.message}
               onChange={handleChange}
             ></textarea>
             <div className="text-center">
               <button
                 type="submit"
                 className="bg-[#1a1a42] text-white py-2 px-4 rounded-md"
-                disabled={isLoading}
+                // disabled={isLoading}
               >
-                {isLoading ? "Submitting..." : "Submit Request"}
+                Submit Request
               </button>
             </div>
           </form>
