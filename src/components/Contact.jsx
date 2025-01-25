@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "emailjs-com"; // Missing import added here
+import emailjs from "emailjs-com"; 
 
 import { useSubmitContactFormMutation } from "../features/contactApi";
 
@@ -35,8 +35,11 @@ const Contact = () => {
     emailjs
       .send(
         "service_p06h7xq",
-        "template_0dxp13a",
-        formData,
+        "template_z3lhbbq",
+       {
+        ...formData,
+        receiver_email: "christina.pali@paligroupservices.org", 
+       },
         "zUor9vXyTKf2w3XTg"
       )
       .then(
@@ -49,8 +52,10 @@ const Contact = () => {
         (error) => {
           console.log(error.text);
           toast.error("Failed to send message. Please try again.", {
-            position: "top-center",
+            position: "top-center", 
           });
+
+
         }
       );
 
@@ -201,7 +206,7 @@ const Contact = () => {
               <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@paligroupservices.org"
+                  href="mailto: admin@paligroupservices.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -212,7 +217,7 @@ const Contact = () => {
               <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=firestopping@paligroupservices.org"
+                  href="mailto:firestopping@paligroupservices.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -223,7 +228,7 @@ const Contact = () => {
               <li className="flex items-center justify-start lg:justify-start">
                 <FaEnvelope className="text-default mr-2" />
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=support@paligroupservices.org"
+                  href="mailto: support@paligroupservices.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
