@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "emailjs-com"; // Missing import added here
 
 import { useSubmitContactFormMutation } from "../features/contactApi";
 
@@ -28,49 +29,38 @@ const Contact = () => {
   };
 
   // Handle form submission
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Split fullName into firstName and lastName
-    const [firstName, ...lastNameParts] = formData.fullName.split(" ");
-    const lastName = lastNameParts.join(" ");
+    emailjs
+      .send(
+        "service_p06h7xq",
+        "template_0dxp13a",
+        formData,
+        "zUor9vXyTKf2w3XTg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!", {
+            position: "top-center",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Failed to send message. Please try again.", {
+            position: "top-center",
+          });
+        }
+      );
 
-    const payload = {
-      subject: formData.subject,
-      firstName: firstName || "",
-      lastName: lastName || "",
-      email: formData.email,
-      phoneNumber: formData.phone,
-      message: formData.message,
-    };
-
-    try {
-      await submitContactForm(payload).unwrap();
-      toast.success("Message submitted successfully!", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-      });
-      setFormData({
-        fullName: "",
-        phone: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    } catch (err) {
-      toast.error("Failed to submit the message!", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-      });
-    }
+    setFormData({
+      fullName: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   // Animation Variants
