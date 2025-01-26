@@ -3,6 +3,9 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export default function AboutPage() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-20">
       {/* Hero Section */}

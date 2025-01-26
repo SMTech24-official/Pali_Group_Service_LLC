@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -51,6 +51,32 @@ const Contact = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        if (data.success) {
+          toast.success("Message submitted successfully!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+          setMailData({
+            fullName: "",
+            phone: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        } else {
+          toast.error("Failed to submit the message!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
