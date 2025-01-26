@@ -1,10 +1,8 @@
 import  { useEffect } from "react";
 
 
+
 const Blog = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -117,7 +115,6 @@ const Blog = () => {
           src="/images/blog-4444.svg"
           alt="OSHPD HCAi construction and inspections"
           className="w-full max-w-[1170px] mx-auto"
-        />
         />
         <div className="mt-5 mb-10 md:mb-20 lg:mt-10 max-w-[1170px] mx-auto">
           <p className="mt-6 sm:mt-8 text-gray text-[14px] sm:text-[16px] leading-relaxed">
