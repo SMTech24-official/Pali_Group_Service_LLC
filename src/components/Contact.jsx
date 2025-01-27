@@ -82,34 +82,7 @@ const Contact = () => {
         console.error("Error:", error);
       });
 
-    // try {
-    //   const res = await submitContactForm(payload).unwrap();
-    //   console.log({ res });
-    //   toast.success("Message submitted successfully!", {
-    //     position: "top-center",
-    //     autoClose: 3000,
-    //     hideProgressBar: true,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //   });
-    //   setMailData({
-    //     fullName: "",
-    //     phone: "",
-    //     email: "",
-    //     subject: "",
-    //     message: "",
-    //   });
-    // } catch (err) {
-    //   toast.error("Failed to submit the message!", {
-    //     position: "top-center",
-    //     autoClose: 3000,
-    //     hideProgressBar: true,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //   });
-    // }
+  
   };
 
   // Animation Variants
@@ -241,8 +214,7 @@ const Contact = () => {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-center justify-start lg:justify-start">
-                <FaLocationDot className="text-default mr-2 text-[22px]" /> 505
-                Montgomery Street San Francisco, CA 94111 Suite 1100
+                <FaLocationDot className="text-default mr-2 text-[22px]" /> 505 Montgomery Street Suite 1100 San Francisco, CA 94111
               </li>
               <li className="flex items-center justify-start lg:justify-start">
                 <FaPhoneAlt className="text-default mr-2" /> +1 415-297-3432
