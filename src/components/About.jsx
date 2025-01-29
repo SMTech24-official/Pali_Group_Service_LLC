@@ -43,9 +43,11 @@ const About = () => {
             emphasis in Biogeochemistry from the California University...
             <Link
               to="/aboutUs"
+              aria-label="Learn more about Christina Pali and Pali Group Services"
+              title="Learn more about Christina Pali and Pali Group Services"
               className="text-blue-600 font-bold underline ml-1"
             >
-              more
+            Learn more about Christina Pali
             </Link>
           </p>
         </div>
@@ -82,9 +84,11 @@ const About = () => {
             Miceal is a seasoned professional with deep industry...
             <Link
               to="/aboutUs"
+              aria-label="Learn more about Miceal Moran and his role at Pali Group Services"
+              title="Learn more about Miceal Moran and his role at Pali Group Services"
               className="text-blue-600 font-bold underline ml-1"
             >
-              more
+                Learn more about Miceal Moran
             </Link>
           </p>
         </div>

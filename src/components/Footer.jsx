@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  // const currentYear = new Date().getFullYear();
   const location = useLocation();
 
-  // Scroll to section on navigation (e.g., Home or Services)
   const scrollToSection = (sectionId) => {
     if (location.pathname === "/") {
       const section = document.getElementById(sectionId);
@@ -67,8 +65,11 @@ const Footer = () => {
               <ul className="text-[#FFFFFF] font-semibold space-y-8">
                 <li>
                   <a
-                    // href="#home"
-                    onClick={() => scrollToSection("home")}
+                    href="/#home"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("home");
+                    }}
                     className="cursor-pointer"
                   >
                     Home
@@ -76,8 +77,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    // href="#services"
-                    onClick={() => scrollToSection("services")}
+                    href="/#services"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("services");
+                    }}
                     className="cursor-pointer"
                   >
                     Services
@@ -90,8 +94,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    // href="#why-us"
-                    onClick={() => scrollToSection("why-us")}
+                    href="/#why-us"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("why-us");
+                    }}
                     className="cursor-pointer"
                   >
                     Why Choose Us
@@ -99,15 +106,18 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <Link to="/blog" className="">
+                  <Link to="/blog" className="cursor-pointer">
                     Blog
                   </Link>
                 </li>
 
                 <li className="pb-6">
                   <a
-                    // href="#contact"
-                    onClick={() => scrollToSection("contact")}
+                    href="/#contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("contact");
+                    }}
                     className="cursor-pointer"
                   >
                     Contact
@@ -132,6 +142,7 @@ const Footer = () => {
                   href="https://www.facebook.com/people/Pali-Group-Services-LLC/61571270249881/?mibextid=wwXIfr"
                   target="_blank"
                   className="w-8 h-8 rounded-[8px] bg-primary flex justify-center items-center border border-[#FFFFFF80]"
+                  rel="noopener noreferrer"
                 >
                   <FaFacebookF className="text-white w-4 h-4" />
                 </a>
@@ -139,6 +150,7 @@ const Footer = () => {
                   href="https://www.instagram.com/paligroupservicesllc/?igsh=NTc4MTIwNjQ2YQ%3D%3D#"
                   target="_blank"
                   className="w-8 h-8 border-primary rounded-[8px] flex items-center justify-center border border-[#FFFFFF80]"
+                  rel="noopener noreferrer"
                 >
                   <FaInstagram className="w-5 h-5 text-white" />
                 </a>
