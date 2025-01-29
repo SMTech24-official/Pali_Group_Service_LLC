@@ -9,10 +9,18 @@ import Contact from "../components/Contact";
 import About from "../components/About";
 // import Activity from "../components/Activity";
 import Dedicate from "../components/Dedicate";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <div>
+       <Helmet>
+        <title>Pali Group Service LLC</title>
+        <meta
+          name="description"
+          content="Pali Group Service LLC offers comprehensive IOR services for construction projects in California. Learn more about our services."
+        />
+      </Helmet>
       <Banner />
       {/* <Activity /> */}
       <Dedicate/>

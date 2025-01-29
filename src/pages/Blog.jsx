@@ -1,6 +1,5 @@
-import  { useEffect } from "react";
-
-
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   useEffect(() => {
@@ -12,6 +11,17 @@ const Blog = () => {
       className="max-w-[1440px] mx-auto pt-20 px-4 sm:px-8 lg:px-16"
       id="blog"
     >
+      <Helmet>
+        <title>Pali Group Service LLC - Blog</title>
+        <meta
+          name="description"
+          content="Learn about Pali Group Service LLC, its expertise in regulatory compliance, safety, quality assurance, and healthcare construction inspections."
+        />
+        <meta
+          name="keywords"
+          content="Pali Group Service, OSHPD, HCAi, construction inspections, healthcare facilities, IOR, quality assurance, compliance"
+        />
+      </Helmet>
       {/* Blog Header */}
       <div>
         <h1 className="text-center text-default text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8">

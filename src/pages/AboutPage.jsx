@@ -1,13 +1,27 @@
 import { useEffect } from "react";
 import { MdOutlineEmail } from "react-icons/md";
+import { Helmet } from "react-helmet";
 
 export default function AboutPage() {
-  useEffect(() => { window.scrollTo(0, 0); }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+      <Helmet>
+        <title>Pali Group Service LLC - About Us  </title>
+        <meta
+          name="description"
+          content="Learn more about Pali Group Services, our mission, and the leadership team behind our success in construction management and inspections."
+        />
+        <meta
+          name="keywords"
+          content="Pali Group Services, About Us, construction management, inspections, IOR services, OSHPD HCAi"
+        />
+      </Helmet>
       {/* Hero Section */}
       <div className="grid md:grid-cols-2 gap-[30px] md:gap-[60px]  items-start mb-[60px] md:mb-[120px]">
         <div>
